@@ -4,7 +4,7 @@ if [ -$# -eq 0 ]; then
 else
     case $1 in
         INIT)
-            # https://www.softwarecollections.org/en/scls/rhscl/rh-python35/
+            # https://www.softwarecollections.org/en/scls/rhscl/rh-perl520/
             yum install -y centos-release-scl yum-utils
             yum-config-manager --enable rhel-server-rhscl-7-rpms
             yum install -y rh-perl520
