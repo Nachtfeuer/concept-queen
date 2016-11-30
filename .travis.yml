@@ -1,0 +1,13 @@
+# Travis configuration
+language: python
+service: docker
+
+script:
+ - scripts/run_python35.sh
+
+notifications:
+    email:
+        recipients:
+           - thomas.lehmann.private@gmail.com
+        on_success: always
+        on_failure: always
