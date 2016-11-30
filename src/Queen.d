@@ -58,7 +58,7 @@ class Queen {
     }
 
     /// number of found solutions
-    int getNumberOfSolutions() const {
+    ulong getNumberOfSolutions() const {
         return m_solutions.length;
     }
 

@@ -15,7 +15,7 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen_node.js.log
+            OUT=/docker/reports/Queen.bas.log
             rm -f "${OUT}"
 
             cp /docker/src/Queen.bas .

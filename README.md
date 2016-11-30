@@ -13,6 +13,7 @@
 [**Running with Nodejs**](#running-with-nodejs)  
 [**Running with Java**](#running-with-java)  
 [**Running with FreeBasic**](#running-with-freebasic)  
+[**Running with D**](#running-with-d)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -111,5 +112,17 @@ scripts/run_freebasic.sh
 ```
 
 You can check then `reports/Queen.bas.log`
+for the results.
+
+
+## Running with D
+
+Homepage is: https://dlang.org/
+
+```
+scripts/run_d.sh
+```
+
+You can check then `reports/Queen.d.log`
 for the results.
 
