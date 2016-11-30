@@ -9,7 +9,8 @@
 [**Running with Perl**](#running-with-perl)  
 [**Running with Ruby**](#running-with-ruby)  
 [**Running with PHP**](#running-with-php)  
-[**Running with C++**](#running-with-c++)  
+[**Running with C++**](#running-with-c)  
+[**Running with Nodejs**](#running-with-nodejs)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -80,3 +81,13 @@ scripts/run_gcc5.sh
 
 You can check then `reports/Queen.cxx.log`
 for the results.
+
+## Running with Nodejs 
+
+```
+scripts/run_nodejs6.sh
+```
+
+You can check then `reports/Queen_node.js.log`
+for the results.
+

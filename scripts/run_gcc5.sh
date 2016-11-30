@@ -15,10 +15,10 @@ else
             gcc -v | tee --append "${OUT}"
 
             cp /docker/src/Queen.cxx .
-            gcc -o queen --std=c++1y Queen.cxx -lstdc++
+            gcc -O3 -o queen --std=c++1y Queen.cxx -lstdc++
 
             rm -f "${OUT}"
-            for n in $(seq 8 15); do
+            for n in $(seq 8 16); do
                 ./queen "${n}" | tee --append "${OUT}"
             done
         ;;
