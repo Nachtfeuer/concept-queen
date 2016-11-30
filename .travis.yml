@@ -1,6 +1,9 @@
 # Travis configuration
 language: python
-service: docker
+
+# enable docker
+services:
+ - docker
 
 script:
  - scripts/run_python35.sh
