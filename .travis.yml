@@ -13,6 +13,7 @@ script:
  - scripts/run_gcc5.sh
  - scripts/run_nodejs6.sh
  - scripts/run_java8.sh
+ - scripts/run_freebasic.sh
 
 notifications:
     email:

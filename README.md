@@ -12,13 +12,16 @@
 [**Running with C++**](#running-with-c)  
 [**Running with Nodejs**](#running-with-nodejs)  
 [**Running with Java**](#running-with-java)  
+[**Running with FreeBasic**](#running-with-freebasic)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
 for C/C++, Java and Python I were interested in how easy or
-difficult it is to implement the algorithm in other languages.
+how difficult it is to implement the algorithm in other languages.
 Also I were interested to compare the performance.
+
 Who is the winner? We will see ...
+
 
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
@@ -92,7 +95,6 @@ scripts/run_nodejs6.sh
 You can check then `reports/Queen_node.js.log`
 for the results.
 
-
 ## Running with Java 
 
 ```
@@ -100,5 +102,14 @@ scripts/run_java8.sh
 ```
 
 You can check then `reports/Queen.java.log`
+for the results.
+
+## Running with FreeBasic 
+
+```
+scripts/run_freebasic.sh
+```
+
+You can check then `reports/Queen.bas.log`
 for the results.
 
