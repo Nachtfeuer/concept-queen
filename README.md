@@ -14,6 +14,7 @@
 [**Running with Java**](#running-with-java)  
 [**Running with FreeBasic**](#running-with-freebasic)  
 [**Running with D**](#running-with-d)  
+[**Running with Mono**](#running-with-mono)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -124,5 +125,16 @@ scripts/run_d.sh
 ```
 
 You can check then `reports/Queen.d.log`
+for the results.
+
+## Running with Mono
+
+Homepage is: http://www.mono-project.com/
+
+```
+scripts/run_mono.sh
+```
+
+You can check then `reports/Queen.cs.log`
 for the results.
 
