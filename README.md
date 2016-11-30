@@ -9,6 +9,7 @@
 [**Running with Perl**](#running-with-perl)  
 [**Running with Ruby**](#running-with-ruby)  
 [**Running with PHP**](#running-with-php)  
+[**Running with C++**](#running-with-c++)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -70,3 +71,12 @@ scripts/run_php56.sh
 You can check then `reports/Queen.php.log`
 for the results.
 
+## Running with C++
+For the setup the devtoolset-4 is used.
+
+```
+scripts/run_gcc5.sh
+```
+
+You can check then `reports/Queen.cxx.log`
+for the results.

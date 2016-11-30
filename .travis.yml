@@ -10,6 +10,7 @@ script:
  - scripts/run_perl520.sh
  - scripts/run_ruby23.sh
  - scripts/run_php56.sh
+ - scripts/run_gcc5.sh
 
 notifications:
     email:
