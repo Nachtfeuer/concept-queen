@@ -11,6 +11,7 @@
 [**Running with PHP**](#running-with-php)  
 [**Running with C++**](#running-with-c)  
 [**Running with Nodejs**](#running-with-nodejs)  
+[**Running with Java**](#running-with-java)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -89,5 +90,15 @@ scripts/run_nodejs6.sh
 ```
 
 You can check then `reports/Queen_node.js.log`
+for the results.
+
+
+## Running with Java 
+
+```
+scripts/run_java8.sh
+```
+
+You can check then `reports/Queen.java.log`
 for the results.
 
