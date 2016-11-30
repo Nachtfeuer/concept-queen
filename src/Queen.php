@@ -140,6 +140,8 @@ function main() {
         $width = intval($argv[1]);
     }
 
+    ini_set('memory_limit', '-1');
+
     echo "Running with PHP Version " . PHP_VERSION . "\n";
     $instance = new Queen($width);
     echo "Queen raster (" . $instance->getWidth() . "x" . $instance->getWidth() . ")\n";

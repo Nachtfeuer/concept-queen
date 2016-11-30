@@ -8,6 +8,7 @@
 [**Running with Python**](#running-with-python)  
 [**Running with Perl**](#running-with-perl)  
 [**Running with Ruby**](#running-with-ruby)  
+[**Running with PHP**](#running-with-php)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -59,3 +60,13 @@ scripts/run_ruby23.sh
 
 You can check then `reports/Queen.rb.log`
 for the results.
+
+## Running with PHP
+
+```
+scripts/run_php56.sh
+```
+
+You can check then `reports/Queen.php.log`
+for the results.
+
