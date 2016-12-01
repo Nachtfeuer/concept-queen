@@ -9,7 +9,7 @@
 [**Running with Perl**](#running-with-perl)  
 [**Running with Ruby**](#running-with-ruby)  
 [**Running with PHP**](#running-with-php)  
-[**Running with C/C++**](#running-with-c)  
+[**Running with C/C++**](#running-with-cc)  
 [**Running with Nodejs**](#running-with-nodejs)  
 [**Running with Java**](#running-with-java)  
 [**Running with FreeBasic**](#running-with-freebasic)  
@@ -18,14 +18,22 @@
 [**Running with Mono**](#running-with-mono)  
 [**Running with Scala**](#running-with-scala)  
 [**Running with Groovy**](#running-with-groovy)  
+[**Running with Go**](#running-with-go)  
 
 ## Introduction
-Queen algorithm in different languages. Since I'm mainly a developer
-for C/C++, Java and Python I were interested in how easy or
-how difficult it is to implement the algorithm in other languages.
-Also I were interested to compare the performance.
+The queen algorithm in different languages. The algorithm is about a `n x n`
+chessboard to place `n` queens that way that no queen does threaten another
+one. On a 8x8 chessboard you will find 92 solutions. When the size of the
+board does increase then the number of solution grow significantly.
 
-Who is the winner? We will see ...
+I'm mainly a developer for C/C++, Java and Python and I were interested
+in how easy or how difficult it is to implement the algorithm in other languages.
+Also I am interested to compare the performance.
+
+For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
+Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy and Go.
+
+Each test runs isolated in a Docker container.
 
 
 ## Rules
@@ -96,6 +104,8 @@ for the results.
 
 ## Running with Nodejs 
 
+Homepage is: https://nodejs.org/en/
+
 ```
 scripts/run_nodejs6.sh
 ```
@@ -114,6 +124,8 @@ for the results.
 
 ## Running with FreeBasic 
 
+Homepage is: http://www.freebasic.net/
+
 ```
 scripts/run_freebasic.sh
 ```
@@ -122,6 +134,8 @@ You can check then `reports/Queen.bas.log`
 for the results.
 
 ## Running with FreePascal 
+
+Homepage is: http://www.freepascal.org
 
 ```
 scripts/run_freepascal.sh
@@ -172,5 +186,17 @@ scripts/run_groovy.sh
 ```
 
 You can check then `reports/Queen.groovy.log`
+for the results.
+
+
+## Running with Go
+
+Homepage is: https://golang.org/
+
+```
+scripts/run_go.sh
+```
+
+You can check then `reports/Queen.go.log`
 for the results.
 

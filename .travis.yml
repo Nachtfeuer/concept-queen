@@ -20,6 +20,7 @@ script:
  - scripts/run_mono.sh
  - scripts/run_scala.sh
  - scripts/run_groovy.sh
+ - scripts/run_go.sh
 
 notifications:
     email:
