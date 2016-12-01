@@ -5,7 +5,7 @@ else
     case $1 in
         INIT)
             yum install -y wget
-            wget http://downloads.dlang.org/releases/2.x/2.072.0/dmd-2.072.0-0.fedora.x86_64.rpm
+            wget http://downloads.dlang.org/releases/2.x/2.072.0/dmd-2.072.0-0.fedora.x86_64.rpm > /dev/null
             yum localinstall -y dmd-2.072.0-0.fedora.x86_64.rpm
             dmd --version
             $0 RUN

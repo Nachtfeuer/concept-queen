@@ -6,8 +6,8 @@ else
         INIT)
             yum install -y wget java-1.8.0-openjdk-devel
             name=scala-2.12.0
-            wget http://downloads.lightbend.com/scala/2.12.0/${name}.tgz
-            tar -xvzf ${name}.tgz
+            wget http://downloads.lightbend.com/scala/2.12.0/${name}.tgz > /dev/null
+            tar -xvzf ${name}.tgz > /dev/null
             export SCALA_HOME=$PWD/${name}
             export PATH=$PATH:${SCALA_HOME}/bin
             java -version
