@@ -16,6 +16,7 @@ script:
  - scripts/run_freebasic.sh
  - scripts/run_d.sh
  - scripts/run_mono.sh
+ - scripts/run_scala.sh
 
 notifications:
     email:

@@ -15,6 +15,7 @@
 [**Running with FreeBasic**](#running-with-freebasic)  
 [**Running with D**](#running-with-d)  
 [**Running with Mono**](#running-with-mono)  
+[**Running with Scala**](#running-with-scala)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -34,9 +35,9 @@ are the rules
    there are enough examples in folder `scripts`.
  - Keep it short and simple.
  - Looking at the times as measured while running through Travis CI you
-   should care for that you do not choose a chess field dimension for which
+   care for that you do not choose a chessboard dimension for which
    the calculation takes longer than 2 minutes.
- - You provide the calculation for each chess board dimension starting by 8
+ - You provide the calculation for each chessboard dimension starting by 8
    until the last one that does fit to the time limitation.
 
 !!! More will come later !!!
@@ -138,3 +139,13 @@ scripts/run_mono.sh
 You can check then `reports/Queen.cs.log`
 for the results.
 
+## Running with Scala
+
+Homepage is: https://www.scala-lang.org/
+
+```
+scripts/run_scala.sh
+```
+
+You can check then `reports/Queen.scala.log`
+for the results.
