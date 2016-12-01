@@ -6,7 +6,8 @@ else
         INIT)
             yum install -y wget gcc-c++ ncurses-devel
             name=FreeBASIC-1.05.0-linux-x86_64
-            wget https://www.freebasic-portal.de/dlfiles/674/${name}.tar.gz > /dev/null
+            echo "downloading of FreeBASIC ..."
+            wget -q https://www.freebasic-portal.de/dlfiles/674/${name}.tar.gz
             tar -xvzf ${name}.tar.gz > /dev/null
             pushd ${name}
             ./install.sh -i /usr

@@ -9,13 +9,15 @@
 [**Running with Perl**](#running-with-perl)  
 [**Running with Ruby**](#running-with-ruby)  
 [**Running with PHP**](#running-with-php)  
-[**Running with C++**](#running-with-c)  
+[**Running with C/C++**](#running-with-c)  
 [**Running with Nodejs**](#running-with-nodejs)  
 [**Running with Java**](#running-with-java)  
 [**Running with FreeBasic**](#running-with-freebasic)  
+[**Running with FreePascal**](#running-with-freepascal)  
 [**Running with D**](#running-with-d)  
 [**Running with Mono**](#running-with-mono)  
 [**Running with Scala**](#running-with-scala)  
+[**Running with Groovy**](#running-with-groovy)  
 
 ## Introduction
 Queen algorithm in different languages. Since I'm mainly a developer
@@ -44,6 +46,8 @@ are the rules
 
 
 ## Running with Python
+
+Homepage is: https://www.python.org
 
 ```
 scripts/run_python3.5.sh
@@ -79,14 +83,15 @@ scripts/run_php56.sh
 You can check then `reports/Queen.php.log`
 for the results.
 
-## Running with C++
+## Running with C/C++
 For the setup the devtoolset-4 is used.
 
 ```
 scripts/run_gcc5.sh
+scripts/run_gcc5_c.sh
 ```
 
-You can check then `reports/Queen.cxx.log`
+You can check then `reports/Queen.cxx.log` and `reports/Queen.c.log`
 for the results.
 
 ## Running with Nodejs 
@@ -116,6 +121,14 @@ scripts/run_freebasic.sh
 You can check then `reports/Queen.bas.log`
 for the results.
 
+## Running with FreePascal 
+
+```
+scripts/run_freepascal.sh
+```
+
+You can check then `reports/Queen.pas.log`
+for the results.
 
 ## Running with D
 
@@ -149,3 +162,15 @@ scripts/run_scala.sh
 
 You can check then `reports/Queen.scala.log`
 for the results.
+
+## Running with Groovy
+
+Homepage is: http://groovy-lang.org/index.html
+
+```
+scripts/run_groovy.sh
+```
+
+You can check then `reports/Queen.groovy.log`
+for the results.
+

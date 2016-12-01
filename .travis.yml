@@ -11,12 +11,15 @@ script:
  - scripts/run_ruby23.sh
  - scripts/run_php56.sh
  - scripts/run_gcc5.sh
+ - scripts/run_gcc5_c.sh
  - scripts/run_nodejs6.sh
  - scripts/run_java8.sh
  - scripts/run_freebasic.sh
+ - scripts/run_freepascal.sh
  - scripts/run_d.sh
  - scripts/run_mono.sh
  - scripts/run_scala.sh
+ - scripts/run_groovy.sh
 
 notifications:
     email:
