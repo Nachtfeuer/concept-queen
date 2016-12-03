@@ -92,27 +92,18 @@
                             (occupy-diagonals2 instance ix-diag-2)
 
                             (if (equal row (get-last-row instance))
-                                ; then
-                                (progn
-                                    ;(print (slot-value instance 'columns))
-                                    (push (slot-value instance 'columns) (slot-value instance 'solutions))
-                                )
-                                ; else
+                                (push (copy-list (slot-value instance 'columns)) (slot-value instance 'solutions))
                                 (run instance :row (+ row 1))
                             )
 
                             (free-column instance column)
                             (free-diagonals1 instance ix-diag-1)
                             (free-diagonals2 instance ix-diag-2)
-                        )
-                    )
-                )
-            )
-        )
-    )
-)
+                        )))))))
 
+(defvar output nil) ; use (defvar output t) for output of the results
 (defvar width 8)
+; allow overwriting the default with a command line parameter
 (when(equal (list-length *posix-argv*) 2)
     (setf width (parse-integer (nth 1 *posix-argv*))))
 
@@ -124,4 +115,13 @@
 (run instance)
 (format t "...took ~12,10F seconds.~%" (/ (- (get-internal-real-time) start) internal-time-units-per-second))
 (format t "...~a solutions found.~%" (list-length (get-solutions instance)))
+
+(if output
+    (loop for columns in (get-solutions instance)
+        do (progn
+            (loop for column from 0 to (- (get-width instance) 1)
+                do (format t "(~a, ~a)" (+ column 1) (+ (nth column columns) 1)))
+            (format t "~%")
+        )
+    ))
 
