@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="report">
+    <head>
+        <title>Welcome to examples using Bootstrap CSS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+
+        <script type="text/javascript">
+        angular.module('report', []);
+        angular.module('report').controller("ReportController", ['$scope', function($scope) {
+            $scope.data = [];
+            // loading JSON data
+            var url = 'https://raw.githubusercontent.com/Nachtfeuer/concept-queen/master/reports/results.json'
+            $.getJSON(url, function (data) {
+                $scope.$apply(function () {
+                    $scope.data = data;
+                });
+            });
+
+            $scope.customSort = function(entryA, entryB) {
+                var diff = entryB.value["chessboard-width"] - entryA.value["chessboard-width"];
+                if (diff == 0) {
+                    diff = entryA.value["duration"] - entryB.value["duration"];
+                }
+                return diff;
+            };
+        }]);
+        </script>
+
+        <style>
+            td.invalid {
+                color: #ff0000;
+            }
+            td.invalid a {
+                color: #ff0000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container" ng-controller="ReportController">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center"><h2>Queen Algorithm - Performance Results</h2></div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <tr>
+                            <th>#</th>
+                            <th>Language</th>
+                            <th style="text-align: right">Chessboard Width</th>
+                            <th style="text-align: right">Duration (s)</th>
+                            <th style="text-align: right">Solutions</th>
+                        </tr>
+                        <tr ng-repeat="entry in data | orderBy:language:false:customSort">
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}">{{$index}}</td>
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}"><a href="{{entry.url}}">{{entry.language}}</a></td>
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry["chessboard-width"]}}</td>
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.duration}}</td>
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.solutions}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
