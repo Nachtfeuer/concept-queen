@@ -19,6 +19,7 @@
 [**Running with Scala**](#running-with-scala)  
 [**Running with Groovy**](#running-with-groovy)  
 [**Running with Go**](#running-with-go)  
+[**Running with CLisp**](#running-with-clisp)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -208,3 +209,19 @@ scripts/run_go.sh
 You can check then `reports/Queen.go.log`
 for the results.
 
+
+## Running with CLisp
+
+Homepage is: http://www.sbcl.org/
+
+I've used this compiler because it seems that the GNU clisp doesn't
+support classes. In comparison to most other languages the implementation
+of the algorithm took me some hours because of the totally different syntax.
+A really good source for reading about CLisp is here: http://www.gigamonkeys.com/book/
+
+```
+scripts/run_clisp.sh
+```
+
+You can check then `reports/Queen.lisp.log`
+for the results.

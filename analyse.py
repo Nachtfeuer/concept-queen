@@ -78,6 +78,10 @@ def handle_mono(buffer):
     print("analyse Mono(CSharp) log ...")
     return handle(buffer, 'Mono(CSharp)', 'http://www.mono-project.com/')
 
+def handle_clisp(buffer):
+    print("analyse clisp(Steel Bank) log ...")
+    return handle(buffer, 'clisp(Steel Bank)', 'http://www.sbcl.org/')
+
 def main():
     data = []
     for entry in os.listdir("reports"):
@@ -114,6 +118,8 @@ def main():
                 data += handle_groovy(buffer)
             elif entry.find(".cs.") >= 0:
                 data += handle_mono(buffer)
+            elif entry.find(".lisp.") >= 0:
+                data += handle_clisp(buffer)
 
     with open("reports/results.json", "w") as handle:
         handle.write(json.dumps(data))
