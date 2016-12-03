@@ -83,8 +83,8 @@ function main() {
     log("Queen raster (" + instance.width + "x" + instance.width + ")");
     var start = new Date().getTime();
     instance.run();
-    log("...calculation took " + (new Date().getTime() - start)/1000.0 + " seconds");
-    log("...with " + instance.solutions.length + " solutions");
+    log("...took " + (new Date().getTime() - start)/1000.0 + " seconds.");
+    log("..." + instance.solutions.length + " solutions found.");
 
     if (OUTPUT == 1) {
         for (var indexA=0; indexA < instance.solutions.length; ++indexA) {

@@ -108,8 +108,8 @@ func main() {
     start := time.Now()
     queen.Run(0)
 
-    fmt.Printf("...took %f seconds\n", time.Since(start).Seconds())
-    fmt.Printf("...%d solutions found\n", len(queen.solutions))
+    fmt.Printf("...took %f seconds.\n", time.Since(start).Seconds())
+    fmt.Printf("...%d solutions found.\n", len(queen.solutions))
 
     //for _, solution := range queen.solutions {
     //  queen.Dump(solution)

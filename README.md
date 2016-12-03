@@ -49,6 +49,14 @@ are the rules
    the calculation takes longer than 2 minutes.
  - You provide the calculation for each chessboard dimension starting by 8
    until the last one that does fit to the time limitation.
+ - The output format for each chessboard should be like the example shows. You can run the `analyse.py` scripts to see whether an assertion is thrown.
+ 
+### Example for expected format
+```
+Queen raster (11x11)
+...took 0.353048 seconds.
+...2680 solutions found.
+```    
 
 !!! More will come later !!!
 

@@ -94,6 +94,6 @@ $instance = Queen->new($theWidth);
 printf("Queen raster (%dx%d)\n", $instance->getWidth, $instance->getWidth);
 my $start = time();
 $instance->runAlgorithm(0);
-printf("...calculation took %.2f seconds.\n", time() - $start);
+printf("...took %.2f seconds.\n", time() - $start);
 printf("...%d solutions found.\n", $instance->getNumberOfSolutions);
 #$instance->printSolutions;

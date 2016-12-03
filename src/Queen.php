@@ -147,8 +147,8 @@ function main() {
     echo "Queen raster (" . $instance->getWidth() . "x" . $instance->getWidth() . ")\n";
     $start = microtime_float();
     $instance->run();
-    echo "..." . $instance->getNumberOfSolutions() . " solutions.\n";
-    echo "...calculation took " . (microtime_float() - $start) . " seconds.\n";
+    echo "...took " . (microtime_float() - $start) . " seconds.\n";
+    echo "..." . $instance->getNumberOfSolutions() . " solutions found.\n";
 
     if (OUTPUT == 1) {
         $instance->printSolutions();

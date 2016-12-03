@@ -187,8 +187,8 @@ int main(int argc, char** argv) {
     printf("Queen raster (%dx%d)\n", instance->width, instance->width);
     clock_t start = clock();
     runAlgorithm(instance, 0);
-    printf("...%d solutions found!\n", instance->numberOfSolutions);
-    printf("...calculation took %f seconds\n", (clock() - start) / (float)CLOCKS_PER_SEC);
+    printf("...took %f seconds.\n", (clock() - start) / (float)CLOCKS_PER_SEC);
+    printf("...%d solutions found.\n", instance->numberOfSolutions);
 
     if (1 == OUTPUT) {
         printSolutions(instance);

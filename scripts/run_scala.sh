@@ -22,7 +22,7 @@ else
             cp /docker/src/Queen.scala .
             scalac -opt:_ Queen.scala
 
-            for n in $(seq 8 13); do
+            for n in $(seq 8 14); do
                 scala Queen "${n}" | tee --append "${OUT}"
             done
         ;;

@@ -134,8 +134,8 @@ namespace Algorithm
                                                + instance.GetWidth() + ")");
             int start = Environment.TickCount;
             instance.RunAlgorithm(0);
-            Console.WriteLine("..." + instance.getNumberOfSolutions() + " found.");
-            Console.WriteLine("...calculation took " + ((Environment.TickCount - start) / 1000.0) + " seconds.");
+            Console.WriteLine("...took " + ((Environment.TickCount - start) / 1000.0) + " seconds.");
+            Console.WriteLine("..." + instance.getNumberOfSolutions() + " solutions found.");
 
             //instance.printSolutions();
         }

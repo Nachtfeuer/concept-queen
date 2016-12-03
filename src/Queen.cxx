@@ -147,10 +147,10 @@ int main(int argc, char* argv[]) {
     std::cout << "Queen raster (" << instance.getWidth() << "x"
                                   << instance.getWidth() << ")" << std::endl;
     instance.run();
-    std::cout << "..." << instance.getNumberOfSolutions() << " solutions" << std::endl;
-    std::cout << "...calculation took "
+    std::cout << "...took "
                << static_cast<double>(clock() - start) / static_cast<double>(CLOCKS_PER_SEC)
-               << " seconds" << std::endl;
+               << " seconds." << std::endl;
+    std::cout << "..." << instance.getNumberOfSolutions() << " solutions found." << std::endl;
     if (OUTPUT) {
         instance.printSolutions();
     }

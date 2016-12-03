@@ -92,11 +92,11 @@ object Queen {
         }
 
         val instance = new Queen(width)
-        println("Queen raster(%dx%d)".format(width, width))
+        println("Queen raster (%dx%d)".format(width, width))
         val start = System.currentTimeMillis();
         instance.run(0)
-        println("...calculation took %f second".format((System.currentTimeMillis() - start) / 1000.0))
-        println("...%d solutions found".format(instance.solutions.length))
+        println("...took %f seconds.".format((System.currentTimeMillis() - start) / 1000.0))
+        println("...%d solutions found.".format(instance.solutions.length))
         //instance.printAllSolutions()
     }
 }

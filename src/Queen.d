@@ -122,7 +122,7 @@ void main(string[] arguments) {
     const TickDuration start = TickDuration.currSystemTick();
     instance.runAlgorithm(0);
     const TickDuration end = TickDuration.currSystemTick();
-    printf("...%d solutions found\n", instance.getNumberOfSolutions());
-    printf("...calculation took %f seconds\n", (end - start).msecs / 1000.0);
+    printf("...took %f seconds.\n", (end - start).msecs / 1000.0);
+    printf("...%d solutions found.\n", instance.getNumberOfSolutions());
     //instance.printSolutions();
 }

@@ -97,8 +97,8 @@ def main
     puts("Queen raster (#{instance.getWidth}x#{instance.getWidth})")
     start = Time.now
     instance.runAlgorithm(0)
+    puts("...took #{Time.now - start} seconds.")
     puts("...#{instance.getNumberOfSolutions} solutions found.")
-    puts("...calculation took #{Time.now - start} seconds")
 
     #instance.printSolutions()
 end

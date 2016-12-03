@@ -103,8 +103,8 @@ public class Queen {
         println "Queen raster (${width}x${width})";
         def start = System.currentTimeMillis();
         instance.runAlgorithm();
-        println "...calculation took " + ((System.currentTimeMillis() - start) / 1000.0) + " seconds!";
-        println "..." + instance.getNumberOfSolutions() + " solutions found!";
+        println "...took " + ((System.currentTimeMillis() - start) / 1000.0) + " seconds.";
+        println "..." + instance.getNumberOfSolutions() + " solutions found.";
         //instance.printSolutions();
     }
 }

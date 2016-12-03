@@ -119,8 +119,8 @@ def main():
 
     Start = time.time()
     instance.run()
-    print("...calculation took %f seconds" % (time.time() - Start))
-    print("...with %d solutions" % (len(instance.solutions)))
+    print("...took %f seconds." % (time.time() - Start))
+    print("...%d solutions found." % (len(instance.solutions)))
 
     if OUTPUT: instance.printAllSolutions()
 

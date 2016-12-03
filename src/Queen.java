@@ -151,8 +151,8 @@ public class Queen {
                                            + instance.getWidth() + ")");
         final long start = System.currentTimeMillis();
         instance.runAlgorithm(0);
-        System.out.println("...calculation took " + ((System.currentTimeMillis() - start) / 1000.0) + " seconds!");
-        System.out.println("..." + instance.getNumberOfSolutions() + " found!");
+        System.out.println("...took " + ((System.currentTimeMillis() - start) / 1000.0) + " seconds.");
+        System.out.println("..." + instance.getNumberOfSolutions() + " solutions found.");
 
         //instance.printSolutions();
     }

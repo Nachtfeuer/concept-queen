@@ -146,7 +146,7 @@ begin
     Writeln('Queen raster (', instance.getWidth, 'x', instance.getWidth, ')');
     start := TimeStampToMSecs(DateTimeToTimeStamp(Now));
     instance.runAlgorithm(0);
-    Writeln('...', instance.getNumberOfSolutions(), ' found.');
-    Writeln('...calculation took ', Format('%.5f',[(TimeStampToMSecs(DateTimeToTimeStamp(Now))-start)/1000.0]), ' seconds.');
+    Writeln('...took ', Format('%.5f',[(TimeStampToMSecs(DateTimeToTimeStamp(Now))-start)/1000.0]), ' seconds.');
+    Writeln('...', instance.getNumberOfSolutions(), ' solutions found.');
     {instance.printSolutions();}
 end.
