@@ -12,11 +12,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.d.log
+            SOURCE=Queen.d
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.d .
-            dmd -O -release -inline -boundscheck=off Queen.d
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=dmd-2.072" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            dmd -O -release -inline -boundscheck=off ${SOURCE}
 
             for n in $(seq 8 16); do
                 ./Queen "${n}" | tee --append "${OUT}"

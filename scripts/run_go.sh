@@ -15,11 +15,15 @@ else
             $0 RUN
             ;;
         RUN)
-            OUT=/docker/reports/Queen.go.log
+            SOURCE=Queen.go
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.go .
-            go build Queen.go
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Go 1.7.4" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            go build ${SOURCE}
 
             for n in $(seq 8 16); do
                 ./Queen "${n}" | tee --append "${OUT}"

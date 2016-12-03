@@ -16,11 +16,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.pas.log
+            SOURCE=Queen.pas
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.pas .
-            fpc -O 3 Queen.pas
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=fpc-3.0.0" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            fpc -O 3 ${SOURCE}
 
             for n in $(seq 8 15); do
                 ./Queen "${n}" | tee --append "${OUT}"

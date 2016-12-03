@@ -11,10 +11,15 @@ else
             scl enable rh-perl520 "/docker/scripts/run_perl520.sh RUN"
         ;;
         RUN)
-            OUT=/docker/reports/Queen.pl.log
+            SOURCE=Queen.pl
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
+
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Perl 5.2" >> ${OUT}
+
             for n in $(seq 8 14); do
-                perl /docker/src/Queen.pl "${n}" | tee --append "${OUT}"
+                perl /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

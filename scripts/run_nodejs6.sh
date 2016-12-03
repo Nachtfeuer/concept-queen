@@ -10,10 +10,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen_node.js.log
+            SOURCE=Queen_node.js
+            OUT=/docker/reports/${SOURCE}.log
+
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Node.js 6.9.x" >> ${OUT}
+
             rm -f "${OUT}"
             for n in $(seq 8 15); do
-                node /docker/src/Queen_node.js "${n}" | tee --append "${OUT}"
+                node /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

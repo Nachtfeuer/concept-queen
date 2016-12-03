@@ -9,11 +9,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.java.log
+            SOURCE=Queen.java
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.java .
-            javac Queen.java
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Java 1.8.0" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            javac ${SOURCE}
 
             for n in $(seq 8 15); do
             java Queen "${n}" | tee --append "${OUT}"

@@ -11,10 +11,15 @@ else
             scl enable rh-ruby23 "/docker/scripts/run_ruby23.sh RUN"
         ;;
         RUN)
-            OUT=/docker/reports/Queen.rb.log
+            SOURCE=Queen.rb
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
+
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Ruby 2.3" >> ${OUT}
+
             for n in $(seq 8 14); do
-                ruby /docker/src/Queen.rb "${n}" | tee --append "${OUT}"
+                ruby /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

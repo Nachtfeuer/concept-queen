@@ -52,6 +52,7 @@
                         <tr>
                             <th>#</th>
                             <th>Language</th>
+                            <th>Version</th>
                             <th style="text-align: right">Chessboard Width</th>
                             <th style="text-align: right">Duration (s)</th>
                             <th style="text-align: right">Solutions</th>
@@ -59,6 +60,7 @@
                         <tr ng-repeat="entry in data | orderBy:language:false:customSort">
                             <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}">{{$index}}</td>
                             <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}"><a href="{{entry.url}}">{{entry.language}}</a></td>
+                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}">{{entry.version}}</td>
                             <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry["chessboard-width"]}}</td>
                             <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.duration}}</td>
                             <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.solutions}}</td>

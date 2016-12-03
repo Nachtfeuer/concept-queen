@@ -16,11 +16,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.groovy.log
+            SOURCE=Queen.groovy
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.groovy .
-            groovyc Queen.groovy
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Groovy 2.4.7" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            groovyc ${SOURCE}
 
             for n in $(seq 8 13); do
                 java -cp .:${GROOVY_HOME}/embeddable/groovy-all-2.4.7.jar Queen "${n}" | tee --append "${OUT}"

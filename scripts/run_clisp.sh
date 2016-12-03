@@ -5,7 +5,6 @@ else
     case $1 in
         INIT)
             yum install -y wget bzip2
-            name=fpc-3.0.0.x86_64-linux
             echo "downloading of clisp (Steel Bank) ..."
             name=sbcl-1.3.12-x86-64-linux-binary
             wget -q http://prdownloads.sourceforge.net/sbcl/${name}.tar.bz2
@@ -17,12 +16,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.lisp.log
+            SOURCE=Queen.lisp
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=sbcl-1.3.12" >> ${OUT}
 
             for n in $(seq 8 14); do
-                sbcl --script /docker/src/Queen.lisp "${n}" | tee --append "${OUT}"
+                sbcl --script /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
         BASH)

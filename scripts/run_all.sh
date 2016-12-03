@@ -16,3 +16,4 @@ scripts/run_php56.sh
 scripts/run_python35.sh
 scripts/run_ruby23.sh
 scripts/run_scala.sh
+scripts/run_clisp.sh

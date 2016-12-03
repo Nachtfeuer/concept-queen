@@ -11,10 +11,15 @@ else
             scl enable rh-python35 "/docker/scripts/run_python35.sh RUN"
         ;;
         RUN)
-            OUT=/docker/reports/Queen.py.log
+            SOURCE=Queen.py
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
+
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Python 3.5" >> ${OUT}
+
             for n in $(seq 8 14); do
-                python /docker/src/Queen.py "${n}" | tee --append "${OUT}"
+                python /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

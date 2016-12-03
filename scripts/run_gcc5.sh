@@ -11,11 +11,15 @@ else
             scl enable devtoolset-4 "/docker/scripts/run_gcc5.sh RUN"
         ;;
         RUN)
-            OUT=/docker/reports/Queen.cxx.log
+            SOURCE=Queen.cxx
+            OUT=/docker/reports/${SOURCE}.log
             gcc -v | tee --append "${OUT}"
 
-            cp /docker/src/Queen.cxx .
-            gcc -O3 -o queen --std=c++1y Queen.cxx -lstdc++
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=gcc 5.x" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            gcc -O3 -o queen --std=c++1y ${SOURCE} -lstdc++
 
             rm -f "${OUT}"
             for n in $(seq 8 16); do

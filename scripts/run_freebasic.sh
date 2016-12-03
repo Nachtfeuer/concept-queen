@@ -10,17 +10,21 @@ else
             wget -q https://www.freebasic-portal.de/dlfiles/674/${name}.tar.gz
             tar -xvzf ${name}.tar.gz > /dev/null
             pushd ${name}
-            ./install.sh -i /usr
+                ./install.sh -i /usr
             popd
             fbc -version
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.bas.log
+            SOURCE=Queen.bas
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.bas .
-            fbc -O 3 Queen.bas
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=fbc-1.05.0" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            fbc -O 3 ${SOURCE}
 
             for n in $(seq 8 16); do
                 ./Queen "${n}" | tee --append "${OUT}"

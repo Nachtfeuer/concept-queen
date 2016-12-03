@@ -11,10 +11,15 @@ else
             scl enable rh-php56 "/docker/scripts/run_php56.sh RUN"
         ;;
         RUN)
-            OUT=/docker/reports/Queen.php.log
+            SOURCE=Queen.php
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
+
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=PHP 5.6" >> ${OUT}
+
             for n in $(seq 8 14); do
-                php /docker/src/Queen.php "${n}" | tee --append "${OUT}"
+                php /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

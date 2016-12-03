@@ -4,6 +4,17 @@ import json
 
 def handle(buffer, language, url):
     data = []
+
+    source = ""
+    for match in re.finditer("SOURCE=(?P<source>.*)", buffer):
+        source = match.group('source')
+        break
+
+    version = ""
+    for match in re.finditer("VERSION=(?P<version>.*)", buffer):
+        version = match.group('version')
+        break
+
     expression  = "Queen raster \((?P<n1>\d*)x(?P<n2>\d*)\)"
     expression += "\n...took (?P<duration>\d*\.\d*) seconds."
     expression += "\n...(?P<solutions>\d*) solutions found."
@@ -13,7 +24,9 @@ def handle(buffer, language, url):
             'url': url,
             'chessboard-width': int(match.group("n1")),
             'duration': float(match.group('duration')),
-            'solutions': int(match.group('solutions'))
+            'solutions': int(match.group('solutions')),
+            'source': source,
+            'version': version
         })
     assert len(data) > 0
     return data

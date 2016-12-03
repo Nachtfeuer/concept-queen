@@ -16,11 +16,15 @@ else
             $0 RUN
         ;;
         RUN)
-            OUT=/docker/reports/Queen.scala.log
+            SOURCE=Queen.scala
+            OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
-            cp /docker/src/Queen.scala .
-            scalac -opt:_ Queen.scala
+            echo "SOURCE=${SOURCE}" >> ${OUT}
+            echo "VERSION=Scala 2.12.0" >> ${OUT}
+
+            cp /docker/src/${SOURCE} .
+            scalac -opt:_ ${SOURCE}
 
             for n in $(seq 8 14); do
                 scala Queen "${n}" | tee --append "${OUT}"
