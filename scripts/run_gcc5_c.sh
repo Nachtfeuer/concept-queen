@@ -23,7 +23,6 @@ else
             cp /docker/src/${SOURCE} .
             gcc -O3 -o queen ${SOURCE}
 
-            rm -f "${OUT}"
             for n in $(seq 8 16); do
                 ./queen "${n}" | tee --append "${OUT}"
             done

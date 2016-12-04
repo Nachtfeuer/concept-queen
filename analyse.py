@@ -1,27 +1,35 @@
+""" Log files analyzer for queen algorihm performance. """
 import os
 import re
 import json
 
-def handle(buffer, language, url):
+
+def handle(text_buffer, language, distribution, url):
+    """ parse log files for queen algorithm performance details. """
     data = []
 
+    print("language={0}, distribution={1}, url={2}"
+          .format(language, distribution, url))
+
     source = ""
-    for match in re.finditer("SOURCE=(?P<source>.*)", buffer):
+    for match in re.finditer("SOURCE=(?P<source>.*)", text_buffer):
         source = match.group('source')
         break
 
     version = ""
-    for match in re.finditer("VERSION=(?P<version>.*)", buffer):
+    for match in re.finditer("VERSION=(?P<version>.*)", text_buffer):
         version = match.group('version')
         break
 
-    expression  = "Queen raster \((?P<n1>\d*)x(?P<n2>\d*)\)"
-    expression += "\n...took (?P<duration>\d*\.\d*) seconds."
-    expression += "\n...(?P<solutions>\d*) solutions found."
-    for match in re.finditer(expression, buffer):
+    expression = r"Queen raster \((?P<n1>\d*)x(?P<n2>\d*)\)"
+    expression += r"\n...took (?P<duration>\d*\.\d*) seconds."
+    expression += r"\n...(?P<solutions>\d*) solutions found."
+
+    for match in re.finditer(expression, text_buffer):
         data.append({
             'language': language,
             'url': url,
+            'distribution': distribution,
             'chessboard-width': int(match.group("n1")),
             'duration': float(match.group('duration')),
             'solutions': int(match.group('solutions')),
@@ -31,114 +39,30 @@ def handle(buffer, language, url):
     assert len(data) > 0
     return data
 
-def handle_bas(buffer):
-    print("analyse FreeBASIC log ...")
-    return handle(buffer, 'FreeBASIC', 'http://www.freebasic.net')
 
-def handle_pas(buffer):
-    print("analyse FreePascall log ...")
-    return handle(buffer, 'free pascal', 'http://www.freepascal.org')
+def handle_descriptor(text_buffer, descriptor):
+    """ parsing test buffer for details. """
+    return handle(text_buffer,
+                  descriptor['language'],
+                  descriptor['distribution'],
+                  descriptor['url'])
 
-def handle_node_js(buffer):
-    print("analyse Node.js log ...")
-    return handle(buffer, 'Node.js', 'https://nodejs.org/en')
-
-def handle_go(buffer):
-    print("analyse Go log ...")
-    return handle(buffer, 'Go', 'https://golang.org')
-
-def handle_python(buffer):
-    print("analyse Python log ...")
-    return handle(buffer, 'Python', 'https://www.python.org')
-
-def handle_pypy(buffer):
-    print("analyse Python (pypy) log ...")
-    return handle(buffer, 'Python', 'http://pypy.org/')
-
-def handle_cplusplus(buffer):
-    print("analyse C++ log ...")
-    return handle(buffer, 'C++', 'https://gcc.gnu.org')
-
-def handle_c(buffer):
-    print("analyse C log ...")
-    return handle(buffer, 'C', 'https://gcc.gnu.org')
-
-def handle_php(buffer):
-    print("analyse PHP log ...")
-    return handle(buffer, 'PHP', 'https://secure.php.net/')
-
-def handle_ruby(buffer):
-    print("analyse Ruby log ...")
-    return handle(buffer, 'Ruby', 'https://www.ruby-lang.org/en/')
-
-def handle_d(buffer):
-    print("analyse D log ...")
-    return handle(buffer, 'D', 'https://dlang.org/')
-
-def handle_scala(buffer):
-    print("analyse Scala log ...")
-    return handle(buffer, 'Scala', 'https://www.scala-lang.org/')
-
-def handle_perl(buffer):
-    print("analyse Perl log ...")
-    return handle(buffer, 'Perl', 'https://www.perl.org/')
-
-def handle_java(buffer):
-    print("analyse Java log ...")
-    return handle(buffer, 'Java', 'https://www.java.com/en/')
-
-def handle_groovy(buffer):
-    print("analyse Groovy log ...")
-    return handle(buffer, 'Groovy', 'http://groovy-lang.org/')
-
-def handle_mono(buffer):
-    print("analyse Mono(CSharp) log ...")
-    return handle(buffer, 'Mono(CSharp)', 'http://www.mono-project.com/')
-
-def handle_clisp(buffer):
-    print("analyse clisp(Steel Bank) log ...")
-    return handle(buffer, 'clisp(Steel Bank)', 'http://www.sbcl.org/')
 
 def main():
+    """ application entry point. """
+    options = json.loads(open("analyse.json").read())
+    descriptors = options['descriptors']
+
     data = []
     for entry in os.listdir("reports"):
         if entry.endswith(".log"):
             full = os.path.join(os.getcwd(), "reports", entry)
-            buffer = open(full).read()
-            if entry.find(".bas.") >= 0:
-                data += handle_bas(buffer)
-            elif entry.find(".pas.") >= 0:
-                data += handle_pas(buffer)
-            elif entry.find(".js.") >= 0:
-                data += handle_node_js(buffer)
-            elif entry.find(".go.") >= 0:
-                data += handle_go(buffer)
-            elif entry.find(".py.") >= 0:
-                data += handle_python(buffer)
-            elif entry.find(".pypy.") >= 0:
-                data += handle_pypy(buffer)
-            elif entry.find(".cxx.") >= 0:
-                data += handle_cplusplus(buffer)
-            elif entry.find(".c.") >= 0:
-                data += handle_c(buffer)
-            elif entry.find(".php.") >= 0:
-                data += handle_php(buffer)
-            elif entry.find(".rb.") >= 0:
-                data += handle_ruby(buffer)
-            elif entry.find(".d.") >= 0:
-                data += handle_d(buffer)
-            elif entry.find(".scala.") >= 0:
-                data += handle_scala(buffer)
-            elif entry.find(".pl.") >= 0:
-                data += handle_perl(buffer)
-            elif entry.find(".java.") >= 0:
-                data += handle_java(buffer)
-            elif entry.find(".groovy.") >= 0:
-                data += handle_groovy(buffer)
-            elif entry.find(".cs.") >= 0:
-                data += handle_mono(buffer)
-            elif entry.find(".lisp.") >= 0:
-                data += handle_clisp(buffer)
+            text_buffer = open(full).read()
+
+            for descriptor in descriptors:
+                if entry.find(descriptor['key']) >= 0:
+                    data += handle_descriptor(text_buffer, descriptor)
+                    break
 
     with open("reports/results.json", "w") as handle:
         handle.write(json.dumps(data))
