@@ -64,14 +64,17 @@ Queen raster (11x11)
 
 ## Running with Python
 
-Homepage is: https://www.python.org
+Homepage is: https://www.python.org and http://pypy.org/.
+The pypy is jit compiler. It's by a significant factor
+faster as you can see when using the report.html.
 
 ```
 scripts/run_python3.5.sh
+scripts/run_pypy5.sh
 ```
 
 You can check then `reports/Queen.py.log`
-for the results.
+and `reports/Queen.pypy.log` for the results.
 
 ## Running with Perl
 

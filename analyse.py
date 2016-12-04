@@ -51,6 +51,10 @@ def handle_python(buffer):
     print("analyse Python log ...")
     return handle(buffer, 'Python', 'https://www.python.org')
 
+def handle_pypy(buffer):
+    print("analyse Python (pypy) log ...")
+    return handle(buffer, 'Python', 'http://pypy.org/')
+
 def handle_cplusplus(buffer):
     print("analyse C++ log ...")
     return handle(buffer, 'C++', 'https://gcc.gnu.org')
@@ -111,6 +115,8 @@ def main():
                 data += handle_go(buffer)
             elif entry.find(".py.") >= 0:
                 data += handle_python(buffer)
+            elif entry.find(".pypy.") >= 0:
+                data += handle_pypy(buffer)
             elif entry.find(".cxx.") >= 0:
                 data += handle_cplusplus(buffer)
             elif entry.find(".c.") >= 0:
