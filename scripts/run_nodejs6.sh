@@ -12,11 +12,11 @@ else
         RUN)
             SOURCE=Queen_node.js
             OUT=/docker/reports/${SOURCE}.log
+            rm -f "${OUT}"
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Node.js 6.9.x" >> ${OUT}
 
-            rm -f "${OUT}"
             for n in $(seq 8 15); do
                 node /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done

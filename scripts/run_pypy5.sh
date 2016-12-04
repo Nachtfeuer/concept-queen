@@ -12,11 +12,11 @@ else
         RUN)
             SOURCE=Queen.py
             OUT=/docker/reports/${SOURCE}py.log
+            rm -f "${OUT}"
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=pypy 5.x" >> ${OUT}
 
-            rm -f "${OUT}"
             for n in $(seq 8 15); do
                 pypy /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done

@@ -13,6 +13,8 @@ else
         RUN)
             SOURCE=Queen.cxx
             OUT=/docker/reports/${SOURCE}.log
+
+            rm -f "${OUT}"
             gcc -v | tee --append "${OUT}"
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
@@ -21,7 +23,6 @@ else
             cp /docker/src/${SOURCE} .
             gcc -O3 -o queen --std=c++1y ${SOURCE} -lstdc++
 
-            rm -f "${OUT}"
             for n in $(seq 8 16); do
                 ./queen "${n}" | tee --append "${OUT}"
             done

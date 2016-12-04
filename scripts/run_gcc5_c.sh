@@ -13,6 +13,8 @@ else
         RUN)
             SOURCE=Queen.c
             OUT=/docker/reports/${SOURCE}.log
+            rm -f "${OUT}"
+
             gcc -v | tee --append "${OUT}"
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
