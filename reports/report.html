@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="report">
     <head>
-        <title>Welcome to examples using Bootstrap CSS</title>
+        <title>Queen Algorithm - Performance Results</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,6 +30,14 @@
                 }
                 return diff;
             };
+
+            $scope.numberOfLanguages = function() {
+                var languages = {};
+                for (var ix=0; ix < $scope.data.length; ++ix) {
+                    languages[$scope.data[ix].language] = 0;
+                }
+                return Object.keys(languages).length;
+            }
         }]);
         </script>
 
@@ -48,22 +56,32 @@
             <div class="panel panel-default">
                 <div class="panel-heading text-center"><h2>Queen Algorithm - Performance Results</h2></div>
                 <div class="panel-body">
+                    <p>
+                    The project is located at <a href="https://github.com/Nachtfeuer/concept-queen">https://github.com/Nachtfeuer/concept-queen</a>.
+                    The purpose is implementing the queen algorithm in different languages (currently {{numberOfLanguages()}}) and 
+                    comparing the code and the performance. The algorithm is about a <b>n x n</b> chessboard with <b>n</b> queens
+                    placed in away that no queen does threaten any other one. The upper limit should be 2 minutes otherwise an
+                    entry will be displayed as red. The order is the biggest chessboard size at top of the table and then with
+                    ascending runtime of the algorithm each chessboard size. 
+                    </p>
                     <table class="table table-bordered table-striped table-condensed">
                         <tr>
                             <th>#</th>
-                            <th>Language</th>
-                            <th>Version</th>
+                            <th style="text-align: left">Language</th>
+                            <th style="text-align: left">Version</th>
                             <th style="text-align: right">Chessboard Width</th>
                             <th style="text-align: right">Duration (s)</th>
                             <th style="text-align: right">Solutions</th>
+                            <th style="text-align: left">Source Code</th>
                         </tr>
                         <tr ng-repeat="entry in data | orderBy:language:false:customSort">
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}">{{$index}}</td>
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}"><a href="{{entry.url}}">{{entry.language}}</a></td>
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}">{{entry.version}}</td>
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry["chessboard-width"]}}</td>
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.duration}}</td>
-                            <td class="{{entry.duration <= 200.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.solutions}}</td>
+                            <td class="{{entry.duration <= 120? 'valid': 'invalid'}}">{{$index}}</td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}"><a href="{{entry.url}}">{{entry.language}}</a></td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}">{{entry.version}}</td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry["chessboard-width"]}}</td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.duration}}</td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.solutions}}</td>
+                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}"><a href="https://github.com/Nachtfeuer/concept-queen/blob/master/src/{{entry.source}}">{{entry.source}}</a></td>
                         </tr>
                     </table>
                 </div>
