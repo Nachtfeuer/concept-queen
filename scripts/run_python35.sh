@@ -17,6 +17,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Python 3.5" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
                 python /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

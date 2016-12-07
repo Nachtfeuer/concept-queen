@@ -16,6 +16,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Node.js 6.9.x" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 15); do
                 node /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

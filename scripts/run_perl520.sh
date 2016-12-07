@@ -17,6 +17,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Perl 5.2" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
                 perl /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

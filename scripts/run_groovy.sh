@@ -22,6 +22,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Groovy 2.4.7" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
             groovyc ${SOURCE}

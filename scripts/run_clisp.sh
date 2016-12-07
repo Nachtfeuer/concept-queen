@@ -22,6 +22,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=sbcl-1.3.12" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
                 sbcl --script /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

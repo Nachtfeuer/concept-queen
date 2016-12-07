@@ -17,6 +17,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Ruby 2.3" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
                 ruby /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

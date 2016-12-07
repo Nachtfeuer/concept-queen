@@ -22,6 +22,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=Scala 2.12.0" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
             scalac -opt:_ ${SOURCE}

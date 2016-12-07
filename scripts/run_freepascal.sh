@@ -22,6 +22,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=fpc-3.0.0" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
             fpc -O 3 ${SOURCE}

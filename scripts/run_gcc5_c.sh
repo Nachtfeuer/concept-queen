@@ -19,6 +19,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=gcc 5.x" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
             gcc -O3 -o queen ${SOURCE}

@@ -23,10 +23,29 @@
                 });
             });
 
+            $scope.countDurations = function(durations) {
+                var count = 0;
+                for (key in durations) {
+                    count += 1;
+                }
+                return count;
+            };
+
+            $scope.averageDuration = function(durations) {
+                var total = 0;
+                var count = 0;
+                for (key in durations) {
+                    total += durations[key];
+                    count += 1;
+                }
+                return total / count;
+            }
+
             $scope.customSort = function(entryA, entryB) {
                 var diff = entryB.value["chessboard-width"] - entryA.value["chessboard-width"];
                 if (diff == 0) {
-                    diff = entryA.value["duration"] - entryB.value["duration"];
+                    diff = $scope.averageDuration(entryA.value["durations"])
+                         - $scope.averageDuration(entryB.value["durations"]);
                 }
                 return diff;
             };
@@ -70,18 +89,28 @@
                             <th style="text-align: left">Language</th>
                             <th style="text-align: left">Version</th>
                             <th style="text-align: right">Chessboard Width</th>
-                            <th style="text-align: right">Duration (s)</th>
+                            <th style="text-align: right">Average Duration</th>
+                            <th style="text-align: right">Count Measurement</th>
                             <th style="text-align: right">Solutions</th>
                             <th style="text-align: left">Source Code</th>
                         </tr>
                         <tr ng-repeat="entry in data | orderBy:language:false:customSort">
-                            <td class="{{entry.duration <= 120? 'valid': 'invalid'}}">{{$index}}</td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}"><a href="{{entry.url}}">{{entry.language}}</a></td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}">{{entry.version}}</td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry["chessboard-width"]}}</td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.duration}}</td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}" style="text-align: right">{{entry.solutions}}</td>
-                            <td class="{{entry.duration <= 120.0? 'valid': 'invalid'}}"><a href="https://github.com/Nachtfeuer/concept-queen/blob/master/src/{{entry.source}}">{{entry.source}}</a></td>
+                            <td class="{{averageDuration(entry.duration) <= 120? 'valid': 'invalid'}}">
+                                {{$index}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
+                                <a href="{{entry.url}}">{{entry.language}}</a></td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
+                                {{entry.version}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}" style="text-align: right">
+                                {{entry["chessboard-width"]}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}" style="text-align: right">
+                                {{averageDuration(entry.durations)}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}" style="text-align: right">
+                                {{countDurations(entry.durations)}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}" style="text-align: right">
+                                {{entry.solutions}}</td>
+                            <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
+                                <a href="https://github.com/Nachtfeuer/concept-queen/blob/master/src/{{entry.source}}">{{entry.source}}</a></td>
                         </tr>
                     </table>
                 </div>

@@ -22,6 +22,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=fbc-1.05.0" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
             fbc -O 3 ${SOURCE}

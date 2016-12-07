@@ -17,6 +17,7 @@ else
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
             echo "VERSION=PHP 5.6" >> ${OUT}
+            echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
                 php /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"

@@ -4,22 +4,28 @@ import re
 import json
 
 
-def handle(text_buffer, language, distribution, url):
+def get_value_for_key(text_buffer, key):
+    """Parsing value from a line with key=value"""
+    for match in re.finditer("%s=(?P<value>.*)" % key, text_buffer):
+        return match.group('value')
+    return ""
+
+
+def process_buffer(text_buffer, language, distribution, url):
     """ parse log files for queen algorithm performance details. """
-    data = []
+    data = json.loads(open("reports/results.json").read())
 
     print("language={0}, distribution={1}, url={2}"
           .format(language, distribution, url))
 
-    source = ""
-    for match in re.finditer("SOURCE=(?P<source>.*)", text_buffer):
-        source = match.group('source')
-        break
-
-    version = ""
-    for match in re.finditer("VERSION=(?P<version>.*)", text_buffer):
-        version = match.group('version')
-        break
+    source = get_value_for_key(text_buffer, 'SOURCE')
+    assert len(source) > 0
+    version = get_value_for_key(text_buffer, 'VERSION')
+    assert len(version) > 0
+    timestamp = get_value_for_key(text_buffer, 'TIMESTAMP')
+    #assert len(timestamp) > 0
+    if len(timestamp) == 0:
+        timestamp = "0"
 
     expression = r"Queen raster \((?P<n1>\d*)x(?P<n2>\d*)\)"
     expression += r"\n...took (?P<duration>\d*\.\d*) seconds."
@@ -31,21 +37,43 @@ def handle(text_buffer, language, distribution, url):
             'url': url,
             'distribution': distribution,
             'chessboard-width': int(match.group("n1")),
-            'duration': float(match.group('duration')),
+            'durations': {int(timestamp): float(match.group('duration'))},
             'solutions': int(match.group('solutions')),
             'source': source,
             'version': version
         })
+
     assert len(data) > 0
     return data
 
 
-def handle_descriptor(text_buffer, descriptor):
+def process_descriptor(text_buffer, descriptor):
     """ parsing test buffer for details. """
-    return handle(text_buffer,
-                  descriptor['language'],
-                  descriptor['distribution'],
-                  descriptor['url'])
+    return process_buffer(text_buffer,
+                          descriptor['language'],
+                          descriptor['distribution'],
+                          descriptor['url'])
+
+def find_data(all_data, entry):
+    for data in all_data:
+        if data["chessboard-width"] != entry["chessboard-width"]:
+            continue
+        if data["language"] != entry["language"]:
+            continue
+        if data["version"] != entry["version"]:
+            continue
+        return data
+    return None
+
+
+def update_data(old_data, new_data):
+    """Updating existing or adding new data."""
+    for new in new_data:
+        old = find_data(old_data, new)
+        if old:
+            old['durations'].update(new['durations'])
+        else:
+            old_data.append(new)
 
 
 def main():
@@ -61,7 +89,7 @@ def main():
 
             for descriptor in descriptors:
                 if entry.find(descriptor['key']) >= 0:
-                    data += handle_descriptor(text_buffer, descriptor)
+                    update_data(data, process_descriptor(text_buffer, descriptor))
                     break
 
     with open("reports/results.json", "w") as handle:
