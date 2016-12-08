@@ -28,16 +28,9 @@ import kotlin.system.measureTimeMillis
 class Queen(val width: Int = 8) {
     val lastRow: Int = width - 1;
     var columns:    Array<Int> = Array<Int>(width, {i -> -1})
-    var diagonals1: MutableList<Int> = ArrayList<Int>()
-    var diagonals2: MutableList<Int> = ArrayList<Int>()
+    var diagonals1: Array<Int> = Array<Int>(width*2-1, {i -> -1})
+    var diagonals2: Array<Int> = Array<Int>(width*2-1, {i -> -1})
     var solutions:  MutableList<Array<Int>> = ArrayList<Array<Int>>()
-
-    init {
-        for (x in 0..(2*width-1)) {
-            diagonals1.add(0);
-            diagonals2.add(0);
-        }
-    }
 
     fun run(row: Int = 0) {
         for (column in 0..lastRow) {
