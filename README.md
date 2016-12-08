@@ -20,6 +20,7 @@
 [**Running with Groovy**](#running-with-groovy)  
 [**Running with Go**](#running-with-go)  
 [**Running with CLisp**](#running-with-clisp)  
+[**Running with Kotlin**](#running-with-kotlin)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -227,4 +228,15 @@ scripts/run_clisp.sh
 ```
 
 You can check then `reports/Queen.lisp.log`
+for the results.
+
+## Running with Kotlin
+
+Homepage is: https://kotlinlang.org
+
+```
+scripts/run_kotlin.sh
+```
+
+You can check then `reports/Queen.kt.log`
 for the results.

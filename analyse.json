@@ -101,6 +101,12 @@
             "language": "FreeBASIC",
             "distribution": "FreeBASIC",
             "url": "http://www.freebasic.net"
+        },
+        {
+            "key": ".kt.",
+            "language": "Kotlin",
+            "distribution": "Kotlin",
+            "url": "https://kotlinlang.org"
         }
     ]
 }
