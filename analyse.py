@@ -13,8 +13,7 @@ def get_value_for_key(text_buffer, key):
 
 def process_buffer(text_buffer, language, distribution, url):
     """ parse log files for queen algorithm performance details. """
-    data = json.loads(open("reports/results.json").read())
-
+    data = []
     print("language={0}, distribution={1}, url={2}"
           .format(language, distribution, url))
 
@@ -81,7 +80,8 @@ def main():
     options = json.loads(open("analyse.json").read())
     descriptors = options['descriptors']
 
-    data = []
+    data = json.loads(open("reports/results.json").read())
+
     for entry in os.listdir("reports"):
         if entry.endswith(".log"):
             full = os.path.join(os.getcwd(), "reports", entry)
