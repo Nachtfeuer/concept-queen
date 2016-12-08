@@ -72,7 +72,7 @@ public class Queen {
             this.diagonals2[ixDiag2] = true;
 
             if (row == this.lastRow) {
-                this.solutions += [this.columns.clone()];
+                this.solutions.push(this.columns.clone());
             } else {
                 this.runAlgorithm(row+1);
             }

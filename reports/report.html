@@ -95,7 +95,7 @@
                             <th style="text-align: left">Source Code</th>
                         </tr>
                         <tr ng-repeat="entry in data | orderBy:language:false:customSort">
-                            <td class="{{averageDuration(entry.duration) <= 120? 'valid': 'invalid'}}">
+                            <td class="{{averageDuration(entry.durations) <= 120? 'valid': 'invalid'}}">
                                 {{$index}}</td>
                             <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
                                 <a href="{{entry.url}}">{{entry.language}}</a></td>
