@@ -27,7 +27,7 @@ else
             cp /docker/src/${SOURCE} .
             groovyc ${SOURCE}
 
-            for n in $(seq 8 14); do
+            for n in $(seq 8 15); do
                 java -cp .:${GROOVY_HOME}/embeddable/groovy-all-2.4.7.jar Queen "${n}" | tee --append "${OUT}"
             done
             ;;
