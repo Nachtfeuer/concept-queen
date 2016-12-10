@@ -158,12 +158,18 @@
         </div>
     </div>
 
+    <!-- tooltip displaying the duration for one entry -->
     <script type="text/ng-template" id="durationChart">
         <div>
             <h3>Durations for {{entry.version}}, {{entry["chessboard-width"]}}x{{entry["chessboard-width"]}}</h3>
             <div id="versionChart">
                 <c3chart bindto-id="duration-chart">
-                    <chart-column column-id="{{entry.language}}" column-color="#008000" column-values="{{getDurationData(entry)}}" column-type="bar" />
+                    <chart-column column-id="{{entry.language}}" column-color="#008000" column-values="{{getDurationData(entry)}}" column-type="bar" column-labels="true" />
+                    <chart-axis>
+                        <chart-axis-y axis-id="y" axis-position="outer-left" axis-label="Duration in seconds" padding-top="100" padding-bottom="0" range-min="0" />
+                    </chart-axis>
+                    <chart-grid show-x="true" show-y="true">
+                    </chart-grid>
                 </c3chart>
             </div>
         </div>
