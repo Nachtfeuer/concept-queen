@@ -20,6 +20,8 @@
  * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
+import scala.collection.mutable.ListBuffer
+
 object Queen {
     class Queen(initWidth: Int) {
         val width      : Int               = initWidth
@@ -28,7 +30,7 @@ object Queen {
         var columns    : Array[Int]        = new Array(width)
         var diagonals1 : Array[Int]        = null
         var diagonals2 : Array[Int]        = null
-        var solutions  : Array[Array[Int]] = new Array(0)
+        var solutions  : ListBuffer[Array[Int]]  = new ListBuffer()
 
         {
             val numberOfDiagonals = 2 * width - 1
@@ -57,7 +59,7 @@ object Queen {
                             diagonals2(ixDiag2) = 1
 
                             if (row == lastRow) {
-                                solutions = solutions :+ columns.clone()
+                                solutions += columns.clone()
                             } else {
                                 run(row+1)
                             }

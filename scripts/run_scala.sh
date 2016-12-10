@@ -27,7 +27,7 @@ else
             cp /docker/src/${SOURCE} .
             scalac -opt:_ ${SOURCE}
 
-            for n in $(seq 8 14); do
+            for n in $(seq 8 15); do
                 scala Queen "${n}" | tee --append "${OUT}"
             done
         ;;
