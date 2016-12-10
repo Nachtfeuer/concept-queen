@@ -21,6 +21,7 @@
 [**Running with Go**](#running-with-go)  
 [**Running with CLisp**](#running-with-clisp)  
 [**Running with Kotlin**](#running-with-kotlin)  
+[**Running with Lua**](#running-with-lua)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -239,4 +240,15 @@ scripts/run_kotlin.sh
 ```
 
 You can check then `reports/Queen.kt.log`
+for the results.
+
+## Running with Lua
+
+Homepage is: https://www.lua.org/
+
+```
+scripts/run_lua.sh
+```
+
+You can check then `reports/Queen.lua.log`
 for the results.

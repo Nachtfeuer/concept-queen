@@ -107,6 +107,12 @@
             "language": "Kotlin",
             "distribution": "Kotlin",
             "url": "https://kotlinlang.org"
+        },
+        {
+            "key": ".lua.",
+            "language": "Lua",
+            "distribution": "Lua",
+            "url": "https://www.lua.org/"
         }
     ]
 }
