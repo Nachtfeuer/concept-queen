@@ -34,7 +34,7 @@ in how easy or how difficult it is to implement the algorithm in other languages
 Also I am interested to compare the performance.
 
 For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
-Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy and Go.
+Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin and Lua.
 
 Each test runs isolated in a Docker container.
 
@@ -183,6 +183,8 @@ for the results.
 ## Running with Scala
 
 Homepage is: https://www.scala-lang.org/
+Also have a read here:
+http://docs.scala-lang.org/overviews/collections/performance-characteristics.html
 
 ```
 scripts/run_scala.sh

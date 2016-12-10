@@ -40,8 +40,8 @@ public class Queen {
     private int                  width;       // is width(=height) of board
     private int                  lastRow;     // is last row index
     private List<Integer>        columns;     // occupied/free columns
-    private List<Diagonal>       diagonals1;  // occupied/free diagonals "\"
-    private List<Diagonal>       diagonals2;  // occupied/free diagonals "/"
+    private Diagonal[]           diagonals1;  // occupied/free diagonals "\"
+    private Diagonal[]           diagonals2;  // occupied/free diagonals "/"
     private List<List<Integer>>  solutions;   // found solutions
 
     /**
@@ -52,19 +52,21 @@ public class Queen {
     public Queen(int width) {
         this.width      = width;
         this.lastRow    = this.width - 1;
-        this.columns    = new ArrayList<Integer>();
-        this.diagonals1 = new ArrayList<Diagonal>();
-        this.diagonals2 = new ArrayList<Diagonal>();
-        this.solutions  = new ArrayList<List<Integer>>();
 
         final int numberOfDiagonals = 2 * this.width - 1;
+
+        this.columns    = new ArrayList<Integer>();
+        this.diagonals1 = new Diagonal[numberOfDiagonals];
+        this.diagonals2 = new Diagonal[numberOfDiagonals];
+        this.solutions  = new ArrayList<List<Integer>>();
+
 
         for (int index = 0; index < numberOfDiagonals; ++index) {
             if (index < this.width) {
                 this.columns.add(-1);
             }
-            this.diagonals1.add(Diagonal.FREE);
-            this.diagonals2.add(Diagonal.FREE);
+            this.diagonals1[index] = Diagonal.FREE;
+            this.diagonals2[index] = Diagonal.FREE;
         }
     }
 
@@ -95,19 +97,19 @@ public class Queen {
             }
 
             final int ixDiag1 = row + column;
-            if (this.diagonals1.get(ixDiag1) == Diagonal.OCCUPIED) {
+            if (this.diagonals1[ixDiag1] == Diagonal.OCCUPIED) {
                 continue;
             }
 
             final int ixDiag2 = this.lastRow - row + column;
-            if (this.diagonals2.get(ixDiag2) == Diagonal.OCCUPIED) {
+            if (this.diagonals2[ixDiag2] == Diagonal.OCCUPIED) {
                 continue;
             }
 
             // occupying one column and two diagonals
             this.columns.set(column, row);
-            this.diagonals1.set(ixDiag1, Diagonal.OCCUPIED);
-            this.diagonals2.set(ixDiag2, Diagonal.OCCUPIED);
+            this.diagonals1[ixDiag1] = Diagonal.OCCUPIED;
+            this.diagonals2[ixDiag2] = Diagonal.OCCUPIED;
 
             // solution found?
             if (row == this.lastRow) {
@@ -119,8 +121,8 @@ public class Queen {
 
             // freeing one column and two diagonals
             this.columns.set(column, -1);
-            this.diagonals1.set(ixDiag1, Diagonal.FREE);
-            this.diagonals2.set(ixDiag2, Diagonal.FREE);
+            this.diagonals1[ixDiag1] = Diagonal.FREE;
+            this.diagonals2[ixDiag2] = Diagonal.FREE;
         }
     }
 
