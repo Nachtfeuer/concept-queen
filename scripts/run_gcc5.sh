@@ -9,7 +9,7 @@ else
             yum-config-manager --enable rhel-server-rhscl-7-rpms
             yum install -y devtoolset-4-gcc-c++
             scl enable devtoolset-4 "/docker/scripts/run_gcc5.sh RUN"
-        ;;
+            ;;
         RUN)
             SOURCE=Queen.cxx
             OUT=/docker/reports/${SOURCE}.log
@@ -27,6 +27,9 @@ else
             for n in $(seq 8 16); do
                 ./queen "${n}" | tee --append "${OUT}"
             done
-        ;;
+            ;;
+        BASH)
+            docker run --rm=true -v $PWD:/docker -it centos:7.2.1511 bash
+            ;;
     esac
 fi

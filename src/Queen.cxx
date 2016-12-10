@@ -26,6 +26,7 @@
 
 #include <iostream>
 #include <vector>
+#include <list>
 
 static const uint8_t FREE = 0;
 static const uint8_t OCCUPIED = 1;
@@ -36,7 +37,7 @@ public:
     typedef int16_t                  IndexType;
     typedef std::vector<IndexType>   ColumnsType;
     typedef std::vector<uint8_t>     DiagonalsType;
-    typedef std::vector<ColumnsType> SolutionsType;
+    typedef std::list<ColumnsType>   SolutionsType;
 
     Queen(IndexType width)
         : m_width(width)
@@ -72,10 +73,10 @@ public:
     }
 
     void printSolutions() {
-        const uint32_t numberOfSolutions = m_solutions.size();
-        for (uint32_t index = 0; index < numberOfSolutions; ++index) {
-            const ColumnsType& solution = m_solutions[index];
-
+        SolutionsType::const_iterator it = m_solutions.begin();
+        SolutionsType::const_iterator itEnd = m_solutions.end();
+        for (; it != itEnd; ++it) {
+            const ColumnsType& solution = *it;
             for (IndexType column = 0; column < this->m_width; ++column) {
                 std::cout << "(" << (column + 1) << ","
                           << (solution[column] + 1) << ")";
