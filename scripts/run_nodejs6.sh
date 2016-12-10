@@ -18,8 +18,9 @@ else
             echo "VERSION=Node.js 6.9.x" >> ${OUT}
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
-            for n in $(seq 8 15); do
-                node /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
+            # please read here: http://prestonparry.com/articles/IncreaseNodeJSMemorySize/
+            for n in $(seq 8 16); do
+                node --max_old_space_size=4096 /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;
     esac

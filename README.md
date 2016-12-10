@@ -119,6 +119,11 @@ for the results.
 ## Running with Nodejs 
 
 Homepage is: https://nodejs.org/en/
+I know that 16x16 does exceed the limit a bit but
+it will be highlighted in red anyway. Intresting
+to know is that before Node.js did crash because
+of memory limitation. There's an option where you
+can specify/increase this limit (see script).
 
 ```
 scripts/run_nodejs6.sh
@@ -247,6 +252,21 @@ for the results.
 ## Running with Lua
 
 Homepage is: https://www.lua.org/
+
+I have been a bit displeased with this language.
+The dump of what is called a table structure 
+seems not provided by simply calling print like
+you can do in Python (as example). Also it seems
+that this languages constantly changes its interfaces.
+Copying a table can be done in one release with `table.unpack`
+while not in another. In one release you can do `table.nget`
+while you have to do in another `#table` to get the number
+of elements. Also the index seems often 1 based instead of
+zero based which I think is weired since a lot of languages
+are using zero based. Finally the missing `continue` statement
+forced me to do ugly indentation of the logic. When any
+Lua developer would like to give good advises on how to
+do those things easier/better ... be welcome.
 
 ```
 scripts/run_lua.sh
