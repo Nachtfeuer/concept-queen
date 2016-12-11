@@ -36,14 +36,13 @@ Also I am interested to compare the performance.
 For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
 Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin and Lua.
 
-Each test runs isolated in a Docker container.
-
-
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
 or an already provided language with an improved algorithm. However these
 are the rules
 
+ - your algorithm should be able to accept an integer `n` representing a `n x n` chessboard
+ - also - by default - you do not print all solutions your application as to collect all solutions.
  - The concrete language has to run isolated inside a Docker container;
    there are enough examples in folder `scripts`.
  - Keep it short and simple.

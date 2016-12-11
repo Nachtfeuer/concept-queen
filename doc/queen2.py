@@ -1,4 +1,4 @@
-"""Module queen1."""
+"""Module queen2."""
 # pylint: disable=E0602
 import sys
 import time

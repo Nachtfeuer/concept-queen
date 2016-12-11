@@ -1,7 +1,15 @@
 # Welcome to the queen algorithm design
 
+[**The basic algorithm**](#the-basic-algorithm)  
 [**A simple recursive function approach**](#a-simple-recursice-function-approach)  
 [**Improved functional approch**](#improved-functional-approach)  
+
+## The basic algortihm
+
+On a chessboard dimension `n x n` you should be able to place `n` queens
+that way that no queen does threaten another queen. For a `8 x 8` chessboard
+you will find `92` solutions. With an increasing size of the chessboard
+the number of solutions increases significantly. 
 
 ## A simple recursive function approach
 
@@ -59,7 +67,7 @@ Queen raster (11x11)
 As you can see the algorithm is at least two times faster. Following changes:
 
 * Using the closure principle we can keep the two variables `width` and `solutions` global and so we don't need to pass them each function call.
-* We now pass the list of available columns which reduce each recursion so we don't have to check for an occupied columns anymore.
+* We now pass the list of available columns which reduce each recursion so we don't have to check for occupied columns anymore.
 
 ```python
 def queen(width, solutions=[]):
