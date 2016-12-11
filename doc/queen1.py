@@ -1,17 +1,20 @@
-""" Module queen1."""
+"""Module queen1."""
+# pylint: disable=E0602
 import sys
 import time
 
 def queen(width, row=1, solution=[], solutions=[]):
     for column in range(1, width+1):
         found = False
+        # validation:
         for scolumn, srow in solution:
-            if scolumn == column or srow == row:
+            if scolumn == column:
                 found = True
                 break
             if abs(scolumn - column) == abs(srow-row):
                 found = True
                 break
+
         if found:
             continue
 
@@ -22,7 +25,8 @@ def queen(width, row=1, solution=[], solutions=[]):
 
 def main():
     width = 8 # default
-    if len(sys.argv) == 2: width = int(sys.argv[1])
+    if len(sys.argv) == 2:
+        width = int(sys.argv[1])
 
     print("Queen raster (%dx%d)" % (width, width))
     solutions = []
