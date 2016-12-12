@@ -94,7 +94,7 @@ angular.module('report').controller("ReportController", ['$scope', function($sco
      * @description
      * Number of languages.
      * @param {object} entry dictionary representing one language, version and chessboard size.
-     * @returns {string} comma separated list of durations sorted by timestamps (ascending).
+     * @returns {array} array with pairs of timestamp and duration.
      */
     $scope.getDurationData = function(entry) {
         var sorted = []
@@ -106,14 +106,59 @@ angular.module('report').controller("ReportController", ['$scope', function($sco
             return a[0] - b[0];
         });
 
+        return sorted;
+    }
+
+    /**
+     * @ngdoc method
+     * @name join
+     * @methodOf report.controller:ReportController
+     * @description
+     * does provide a comma separated list of values.
+     * @param {array} data array with each entry again an array of values.
+     * @param {int} index the index of the value of one entry to take.
+     * @returns {string} string with comma separated values. 
+     */
+    $scope.join = function(data, index) {
         var values = ""
-        for (var x = 0; x < sorted.length; ++x) {
+        for (var x = 0; x < data.length; ++x) {
             if (x > 0) {
                 values += ","
             }
-            values += sorted[x][1];
+            values += data[x][index];
         }
 
         return values;
+    }
+
+    /**
+     * @ngdoc method
+     * @name getDurationDataPerChessboardSize
+     * @methodOf report.controller:ReportController
+     * @description
+     * array with each entry being a pair of two values: chessboard size
+     * and the average duration. The result will be an ascending sort
+     * by chessboard width.
+     * @param {object} entry dictionary representing one language, version and chessboard size.
+     * @returns {array} array with pairs of chessboard width and average duration.
+     */
+    $scope.getDurationDataPerChessboardSize = function(entry) {
+        var sorted = []
+        for (i in $scope.data) {
+            if ($scope.data[i].language === entry.language &&
+                $scope.data[i].version === entry.version &&
+                $scope.data[i]["chessboard-width"] >= 12) {
+                sorted.push([
+                    $scope.data[i]["chessboard-width"],
+                    $scope.averageDuration($scope.data[i].durations)
+                ]);
+            }
+        }
+
+        sorted.sort(function(a, b) {
+            return a[0] - b[0];
+        });
+
+        return sorted;
     }
 }]);

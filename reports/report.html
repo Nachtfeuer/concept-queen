@@ -68,7 +68,9 @@
                         <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
                             <a href="{{entry.url}}">{{entry.language}}</a></td>
                         <td class="{{averageDuration(entry.durations) <= 120.0? 'valid': 'invalid'}}">
-                            {{entry.version}}
+                            <div uib-tooltip-template="'durationPerChessboardWidthChart'" tooltip-class="chart" tooltip-placement="bottom" ng-model="entry">
+                                <abbr title="">{{entry.version}}</abbr>
+                            </div>
                         </td>
                         <td class="{{averageDuration(entry.durations) <= 120.0? 'valid ': 'invalid '}}" style="text-align: right ">
                             {{entry["chessboard-width"]}}</td>
@@ -96,7 +98,25 @@
             <h3>Durations for {{entry.version}}, {{entry["chessboard-width"]}}x{{entry["chessboard-width"]}}</h3>
             <div id="versionChart">
                 <c3chart bindto-id="duration-chart">
-                    <chart-column column-id="{{entry.language}}" column-color="#008000" column-values="{{getDurationData(entry)}}" column-type="bar" column-labels="true" />
+                    <chart-column column-id="{{entry.language}}" column-color="#008000" column-values="{{join(getDurationData(entry), 1)}}" column-type="bar" column-labels="true" />
+                    <chart-axis>
+                        <chart-axis-y axis-id="y" axis-position="outer-left" axis-label="Duration in seconds" padding-top="100" padding-bottom="0" range-min="0" />
+                    </chart-axis>
+                    <chart-grid show-x="true" show-y="true">
+                    </chart-grid>
+                </c3chart>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/ng-template" id="durationPerChessboardWidthChart">
+        <div>
+            <h3>Durations for {{entry.version}}</h3>
+            <div id="versionChart">
+                <c3chart bindto-id="duration-chart">
+                    <chart-column column-id="x" column-values="{{join(getDurationDataPerChessboardSize(entry), 0)}}" />
+                    <chart-column column-id="{{entry.language}}" column-color="#008000" column-values="{{join(getDurationDataPerChessboardSize(entry), 1)}}" column-type="bar" column-labels="true" />
+                    <chart-axes values-x="x" />
                     <chart-axis>
                         <chart-axis-y axis-id="y" axis-position="outer-left" axis-label="Duration in seconds" padding-top="100" padding-bottom="0" range-min="0" />
                     </chart-axis>
