@@ -19,75 +19,7 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3-angular/1.3.1/c3-angular.min.js"></script>
 
-    <script type="text/javascript">
-        angular.module('report', ['ui.bootstrap', 'gridshore.c3js.chart']);
-        angular.module('report').controller("ReportController", ['$scope', function($scope) {
-            $scope.data = [];
-            // loading JSON data
-            var url = 'https://raw.githubusercontent.com/Nachtfeuer/concept-queen/master/reports/results.json'
-            $.getJSON(url, function(data) {
-                $scope.$apply(function() {
-                    $scope.data = data;
-                });
-            });
-
-            $scope.countDurations = function(durations) {
-                var count = 0;
-                for (key in durations) {
-                    count += 1;
-                }
-                return count;
-            };
-
-            $scope.averageDuration = function(durations) {
-                var total = 0;
-                var count = 0;
-                for (key in durations) {
-                    total += durations[key];
-                    count += 1;
-                }
-                return total / count;
-            }
-
-            $scope.customSort = function(entryA, entryB) {
-                var diff = entryB.value["chessboard-width"] - entryA.value["chessboard-width"];
-                if (diff == 0) {
-                    diff = $scope.averageDuration(entryA.value["durations"]) -
-                        $scope.averageDuration(entryB.value["durations"]);
-                }
-                return diff;
-            };
-
-            $scope.numberOfLanguages = function() {
-                var languages = {};
-                for (var ix = 0; ix < $scope.data.length; ++ix) {
-                    languages[$scope.data[ix].language] = 0;
-                }
-                return Object.keys(languages).length;
-            }
-
-            $scope.getDurationData = function(entry) {
-                var sorted = []
-                for (var key in entry.durations) {
-                    sorted.push([key, entry.durations[key]]);
-                }
-
-                sorted.sort(function(a, b) {
-                    return a[0] - b[0];
-                });
-
-                var values = ""
-                for (var x = 0; x < sorted.length; ++x) {
-                    if (x > 0) {
-                        values += ","
-                    }
-                    values += sorted[x][1];
-                }
-
-                return values;
-            }
-        }]);
-    </script>
+    <script type="text/javascript" src="report.js"></script>
 
     <style>
         td.invalid {
@@ -144,7 +76,7 @@
                             {{averageDuration(entry.durations)}}</td>
                         <td class="{{averageDuration(entry.durations) <=120.0? 'valid ': 'invalid '}}" style="text-align: right ">
                             <div uib-tooltip-template="'durationChart'" tooltip-class="chart" tooltip-placement="bottom" ng-model="entry">
-                                {{countDurations(entry.durations)}}</div>
+                                <abbr title="">{{countDurations(entry.durations)}}</abbr></div>
                         </td>
                         <td class="{{averageDuration(entry.durations) <= 120.0? 'valid ': 'invalid '}}" style="text-align: right ">
                             {{entry.solutions}}
