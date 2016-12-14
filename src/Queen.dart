@@ -21,13 +21,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 class Queen {
+  /// width and height of the chessboard.
   int width;
+  /// last index of row (avoids constantly doing a -1 operation)
   int lastRow;
+  /// the index represents the column and the value at given index
+  /// represents the row. When the value is >= 0 then the column at
+  /// given index is locked.
   List<int> columns;
+  /// the diagonals from top/left to bottom/right.
+  /// a value >= 0 at given index indicates that this diagonal is locked.
   List<int> diaognals1;
+  /// the diagonals from bottom/left to top/right.
+  /// a value >= 0 at given index indicates that this diagonal is locked.
   List<int> diaognals2;
+  /// copies of the columns list where each index has a value > 0 representing
+  /// the locations of the queens.
   List<List<int>> solutions;
 
+  /// initializing the queen algorithm for a given chessboard [width].
   Queen(int width) {
     this.width = width;
     this.lastRow = this.width - 1;
@@ -39,6 +51,7 @@ class Queen {
     this.solutions = new List<List<int>>();
   }
 
+  /// recursive queen algorithm. Each depth handle one [row].
   void run(int row) {
     for (int column = 0; column < this.width; ++column) {
       if (this.columns[column] >= 0) {
@@ -72,6 +85,7 @@ class Queen {
   }
 }
 
+/// application entry point.
 void main(List<String> arguments) {
   var width = 8; // default chessbord width
   if (arguments.length == 1) {

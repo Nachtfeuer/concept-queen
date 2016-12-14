@@ -279,6 +279,15 @@ for the results.
 
 Homepage is: https://www.dartlang.org/
 
+I feel quite comfortable using the Dart language.
+At all parts of the algorithm where I've experienced
+difficulties in other languages I were able to 
+implement it easily in Dart. Installation on Windows
+as well as Debian was easy too. The only negative
+I found is that there is no CentOS based distribution.
+I tried to compile and link myself but it simply 
+takes too long.
+
 ```
 scripts/run_dart.sh
 ```
