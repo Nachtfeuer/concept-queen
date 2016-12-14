@@ -1,1 +1,2065 @@
-[{"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 0.002260258, "0": 0.002260258}, "source": "Queen.rb", "chessboard-width": 8, "version": "Ruby 2.3.0", "solutions": 92, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 0.017019955, "0": 0.017019955}, "source": "Queen.rb", "chessboard-width": 9, "version": "Ruby 2.3.0", "solutions": 352, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 0.076365781, "0": 0.076365781}, "source": "Queen.rb", "chessboard-width": 10, "version": "Ruby 2.3.0", "solutions": 724, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 0.296894735, "0": 0.296894735}, "source": "Queen.rb", "chessboard-width": 11, "version": "Ruby 2.3.0", "solutions": 2680, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 1.050940633, "0": 1.050940633}, "source": "Queen.rb", "chessboard-width": 12, "version": "Ruby 2.3.0", "solutions": 14200, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 5.94508109, "0": 5.94508109}, "source": "Queen.rb", "chessboard-width": 13, "version": "Ruby 2.3.0", "solutions": 73712, "distribution": "Ruby"}, {"language": "Ruby", "url": "https://www.ruby-lang.org/en", "durations": {"0": 35.70416681, "0": 35.70416681}, "source": "Queen.rb", "chessboard-width": 14, "version": "Ruby 2.3.0", "solutions": 365596, "distribution": "Ruby"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.0, "0": 0.0, "1481374999": 0.0, "1481374999": 0.0}, "source": "Queen.d", "chessboard-width": 8, "version": "dmd-2.072", "solutions": 92, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.0, "0": 0.0, "1481374999": 0.0, "1481374999": 0.0}, "source": "Queen.d", "chessboard-width": 9, "version": "dmd-2.072", "solutions": 352, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.003, "0": 0.004, "1481374999": 0.003, "1481374999": 0.003}, "source": "Queen.d", "chessboard-width": 10, "version": "dmd-2.072", "solutions": 724, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.048, "0": 0.092, "1481374999": 0.043, "1481374999": 0.043}, "source": "Queen.d", "chessboard-width": 11, "version": "dmd-2.072", "solutions": 2680, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.204, "0": 0.173, "1481374999": 0.234, "1481374999": 0.234}, "source": "Queen.d", "chessboard-width": 12, "version": "dmd-2.072", "solutions": 14200, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 0.533, "0": 0.577, "1481374999": 0.639, "1481374999": 0.639}, "source": "Queen.d", "chessboard-width": 13, "version": "dmd-2.072", "solutions": 73712, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 2.472, "0": 2.768, "1481374999": 2.701, "1481374999": 2.701}, "source": "Queen.d", "chessboard-width": 14, "version": "dmd-2.072", "solutions": 365596, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 15.669, "0": 16.671, "1481374999": 16.275, "1481374999": 16.275}, "source": "Queen.d", "chessboard-width": 15, "version": "dmd-2.072", "solutions": 2279184, "distribution": "D (DMD)"}, {"language": "D", "url": "https://dlang.org", "durations": {"1481135649": 113.624, "0": 112.155, "1481374999": 110.361, "1481374999": 110.361}, "source": "Queen.d", "chessboard-width": 16, "version": "dmd-2.072", "solutions": 14772512, "distribution": "D (DMD)"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 0.0001311302185058594, "0": 0.0001311302185058594}, "source": "Queen.bas", "chessboard-width": 8, "version": "fbc 1.05.0", "solutions": 92, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 0.0005469322204589844, "0": 0.0005469322204589844}, "source": "Queen.bas", "chessboard-width": 9, "version": "fbc 1.05.0", "solutions": 352, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 0.002504825592041016, "0": 0.002504825592041016}, "source": "Queen.bas", "chessboard-width": 10, "version": "fbc 1.05.0", "solutions": 724, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 0.03188896179199219, "0": 0.03188896179199219}, "source": "Queen.bas", "chessboard-width": 11, "version": "fbc 1.05.0", "solutions": 2680, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 0.1326248645782471, "0": 0.1326248645782471}, "source": "Queen.bas", "chessboard-width": 12, "version": "fbc 1.05.0", "solutions": 14200, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 1.583334922790527, "0": 1.583334922790527}, "source": "Queen.bas", "chessboard-width": 13, "version": "fbc 1.05.0", "solutions": 73712, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 5.090039014816284, "0": 5.090039014816284}, "source": "Queen.bas", "chessboard-width": 14, "version": "fbc 1.05.0", "solutions": 365596, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 34.5185661315918, "0": 34.5185661315918}, "source": "Queen.bas", "chessboard-width": 15, "version": "fbc 1.05.0", "solutions": 2279184, "distribution": "FreeBASIC"}, {"language": "FreeBASIC", "url": "http://www.freebasic.net", "durations": {"0": 218.3253200054169, "0": 218.3253200054169}, "source": "Queen.bas", "chessboard-width": 16, "version": "fbc 1.05.0", "solutions": 14772512, "distribution": "FreeBASIC"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.022469, "1481310778": 0.022469, "1481133937": 0.021999, "1481085174": 0.019929}, "source": "Queen.py", "chessboard-width": 8, "version": "pypy 5.x", "solutions": 92, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.147015, "1481310778": 0.147015, "1481133937": 0.073278, "1481085174": 0.066056}, "source": "Queen.py", "chessboard-width": 9, "version": "pypy 5.x", "solutions": 352, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.083124, "1481310778": 0.083124, "1481133937": 0.103288, "1481085174": 0.092723}, "source": "Queen.py", "chessboard-width": 10, "version": "pypy 5.x", "solutions": 724, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.103403, "1481310778": 0.103403, "1481133937": 0.105634, "1481085174": 0.101253}, "source": "Queen.py", "chessboard-width": 11, "version": "pypy 5.x", "solutions": 2680, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.207961, "1481310778": 0.207961, "1481133937": 0.198095, "1481085174": 0.187909}, "source": "Queen.py", "chessboard-width": 12, "version": "pypy 5.x", "solutions": 14200, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 0.808625, "1481310778": 0.808625, "1481133937": 0.838515, "1481085174": 0.88396}, "source": "Queen.py", "chessboard-width": 13, "version": "pypy 5.x", "solutions": 73712, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 3.676653, "1481310778": 3.676653, "1481133937": 3.802937, "1481085174": 3.999066}, "source": "Queen.py", "chessboard-width": 14, "version": "pypy 5.x", "solutions": 365596, "distribution": "PyPy"}, {"language": "Python", "url": "http://pypy.org", "durations": {"1481310778": 25.630178, "1481310778": 25.630178, "1481133937": 25.9002, "1481085174": 25.284908}, "source": "Queen.py", "chessboard-width": 15, "version": "pypy 5.x", "solutions": 2279184, "distribution": "PyPy"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 0.0023698806762695, "0": 0.0023698806762695}, "source": "Queen.php", "chessboard-width": 8, "version": "PHP 5.6", "solutions": 92, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 0.068099975585938, "0": 0.068099975585938}, "source": "Queen.php", "chessboard-width": 9, "version": "PHP 5.6", "solutions": 352, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 0.041280031204224, "0": 0.041280031204224}, "source": "Queen.php", "chessboard-width": 10, "version": "PHP 5.6", "solutions": 724, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 0.25742101669312, "0": 0.25742101669312}, "source": "Queen.php", "chessboard-width": 11, "version": "PHP 5.6", "solutions": 2680, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 0.98229479789734, "0": 0.98229479789734}, "source": "Queen.php", "chessboard-width": 12, "version": "PHP 5.6", "solutions": 14200, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 6.1908190250397, "0": 6.1908190250397}, "source": "Queen.php", "chessboard-width": 13, "version": "PHP 5.6", "solutions": 73712, "distribution": "PHP"}, {"language": "PHP", "url": "https://secure.php.net", "durations": {"0": 47.70192694664, "0": 47.70192694664}, "source": "Queen.php", "chessboard-width": 14, "version": "PHP 5.6", "solutions": 365596, "distribution": "PHP"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 0.005, "0": 0.005}, "source": "Queen.lisp", "chessboard-width": 8, "version": "sbcl-1.3.12", "solutions": 92, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 0.01, "0": 0.01}, "source": "Queen.lisp", "chessboard-width": 9, "version": "sbcl-1.3.12", "solutions": 352, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 0.174, "0": 0.174}, "source": "Queen.lisp", "chessboard-width": 10, "version": "sbcl-1.3.12", "solutions": 724, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 0.28, "0": 0.28}, "source": "Queen.lisp", "chessboard-width": 11, "version": "sbcl-1.3.12", "solutions": 2680, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 0.907, "0": 0.907}, "source": "Queen.lisp", "chessboard-width": 12, "version": "sbcl-1.3.12", "solutions": 14200, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 5.112, "0": 5.112}, "source": "Queen.lisp", "chessboard-width": 13, "version": "sbcl-1.3.12", "solutions": 73712, "distribution": "Steel Bank"}, {"language": "CLisp", "url": "http://www.sbcl.org/", "durations": {"0": 30.646, "0": 30.646}, "source": "Queen.lisp", "chessboard-width": 14, "version": "sbcl-1.3.12", "solutions": 365596, "distribution": "Steel Bank"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.000133, "1481310504": 0.000133, "0": 0.000302}, "source": "Queen.go", "chessboard-width": 8, "version": "Go 1.7.4", "solutions": 92, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.000583, "1481310504": 0.000583, "0": 0.000674}, "source": "Queen.go", "chessboard-width": 9, "version": "Go 1.7.4", "solutions": 352, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.002829, "1481310504": 0.002829, "0": 0.003133}, "source": "Queen.go", "chessboard-width": 10, "version": "Go 1.7.4", "solutions": 724, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.035818, "1481310504": 0.035818, "0": 0.039134}, "source": "Queen.go", "chessboard-width": 11, "version": "Go 1.7.4", "solutions": 2680, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.136622, "1481310504": 0.136622, "0": 0.157352}, "source": "Queen.go", "chessboard-width": 12, "version": "Go 1.7.4", "solutions": 14200, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 0.521168, "1481310504": 0.521168, "0": 0.686377}, "source": "Queen.go", "chessboard-width": 13, "version": "Go 1.7.4", "solutions": 73712, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 2.5565, "1481310504": 2.5565, "0": 2.624682}, "source": "Queen.go", "chessboard-width": 14, "version": "Go 1.7.4", "solutions": 365596, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 15.643021, "1481310504": 15.643021, "0": 16.188268}, "source": "Queen.go", "chessboard-width": 15, "version": "Go 1.7.4", "solutions": 2279184, "distribution": "Google Go"}, {"language": "Go", "url": "https://golang.org", "durations": {"1481310504": 105.024067, "1481310504": 105.024067, "0": 108.03436}, "source": "Queen.go", "chessboard-width": 16, "version": "Go 1.7.4", "solutions": 14772512, "distribution": "Google Go"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 0.217, "0": 0.074, "1481227124": 0.162, "1481225440": 0.138, "1481483183": 0.094, "1481483183": 0.094}, "source": "Queen.groovy", "chessboard-width": 8, "version": "Groovy 2.4.7", "solutions": 92, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 0.218, "0": 0.144, "1481227124": 0.167, "1481225440": 0.174, "1481483183": 0.12, "1481483183": 0.12}, "source": "Queen.groovy", "chessboard-width": 9, "version": "Groovy 2.4.7", "solutions": 352, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 0.337, "0": 0.26, "1481227124": 0.283, "1481225440": 0.309, "1481483183": 0.228, "1481483183": 0.228}, "source": "Queen.groovy", "chessboard-width": 10, "version": "Groovy 2.4.7", "solutions": 724, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 0.507, "0": 0.487, "1481227124": 0.537, "1481225440": 0.553, "1481483183": 0.494, "1481483183": 0.494}, "source": "Queen.groovy", "chessboard-width": 11, "version": "Groovy 2.4.7", "solutions": 2680, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 1.287, "0": 1.482, "1481227124": 0.937, "1481225440": 1.259, "1481483183": 0.918, "1481483183": 0.918}, "source": "Queen.groovy", "chessboard-width": 12, "version": "Groovy 2.4.7", "solutions": 14200, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 4.099, "0": 11.865, "1481227124": 3.515, "1481225440": 9.13, "1481483183": 3.391, "1481483183": 3.391}, "source": "Queen.groovy", "chessboard-width": 13, "version": "Groovy 2.4.7", "solutions": 73712, "distribution": "Groovy"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 0.001, "1481375307": 0.006, "1481375307": 0.006}, "source": "Queen.cs", "chessboard-width": 9, "version": "Mono 4.6", "solutions": 352, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 0.004, "1481375307": 0.014, "1481375307": 0.014}, "source": "Queen.cs", "chessboard-width": 10, "version": "Mono 4.6", "solutions": 724, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 0.03, "1481375307": 0.091, "1481375307": 0.091}, "source": "Queen.cs", "chessboard-width": 11, "version": "Mono 4.6", "solutions": 2680, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 0.128, "1481375307": 0.239, "1481375307": 0.239}, "source": "Queen.cs", "chessboard-width": 12, "version": "Mono 4.6", "solutions": 14200, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 0.779, "1481375307": 0.747, "1481375307": 0.747}, "source": "Queen.cs", "chessboard-width": 13, "version": "Mono 4.6", "solutions": 73712, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 4.558, "1481375307": 4.2, "1481375307": 4.2}, "source": "Queen.cs", "chessboard-width": 14, "version": "Mono 4.6", "solutions": 365596, "distribution": "Mono"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"0": 39.269, "1481375307": 26.078, "1481375307": 26.078}, "source": "Queen.cs", "chessboard-width": 15, "version": "Mono 4.6", "solutions": 2279184, "distribution": "Mono"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"0": 0.01, "1481398331": 0.01, "1481398331": 0.01}, "source": "Queen.cxx", "chessboard-width": 11, "version": "gcc 5.x", "solutions": 2680, "distribution": "GNU GCC"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"1481310291": 0.08, "0": 0.07, "1481398331": 0.07, "1481398331": 0.07}, "source": "Queen.cxx", "chessboard-width": 12, "version": "gcc 5.x", "solutions": 14200, "distribution": "GNU GCC"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"1481310291": 0.37, "0": 0.38, "1481398331": 0.37, "1481398331": 0.37}, "source": "Queen.cxx", "chessboard-width": 13, "version": "gcc 5.x", "solutions": 73712, "distribution": "GNU GCC"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"1481310291": 2.02, "0": 2.23, "1481398331": 2.07, "1481398331": 2.07}, "source": "Queen.cxx", "chessboard-width": 14, "version": "gcc 5.x", "solutions": 365596, "distribution": "GNU GCC"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"1481310291": 13.1, "0": 13.55, "1481398331": 12.98, "1481398331": 12.98}, "source": "Queen.cxx", "chessboard-width": 15, "version": "gcc 5.x", "solutions": 2279184, "distribution": "GNU GCC"}, {"language": "C++", "url": "https://gcc.gnu.org", "durations": {"1481310291": 87.21, "0": 88.66, "1481398331": 87.76, "1481398331": 87.76}, "source": "Queen.cxx", "chessboard-width": 16, "version": "gcc 5.x", "solutions": 14772512, "distribution": "GNU GCC"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.0, "0": 0.0, "1481482656": 0.0}, "source": "Queen.pas", "chessboard-width": 8, "version": "fpc-3.0.0", "solutions": 92, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.001, "0": 0.001, "1481482656": 0.001}, "source": "Queen.pas", "chessboard-width": 9, "version": "fpc-3.0.0", "solutions": 352, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.004, "0": 0.005, "1481482656": 0.004}, "source": "Queen.pas", "chessboard-width": 10, "version": "fpc-3.0.0", "solutions": 724, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.032, "0": 0.065, "1481482656": 0.032}, "source": "Queen.pas", "chessboard-width": 11, "version": "fpc-3.0.0", "solutions": 2680, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.274, "0": 0.237, "1481482656": 0.274}, "source": "Queen.pas", "chessboard-width": 12, "version": "fpc-3.0.0", "solutions": 14200, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 0.605, "0": 0.59, "1481482656": 0.605}, "source": "Queen.pas", "chessboard-width": 13, "version": "fpc-3.0.0", "solutions": 73712, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 3.322, "0": 3.396, "1481482656": 3.322}, "source": "Queen.pas", "chessboard-width": 14, "version": "fpc-3.0.0", "solutions": 365596, "distribution": "free pascal"}, {"language": "free pascal", "url": "http://www.freepascal.org", "durations": {"1481482656": 22.72, "0": 23.281, "1481482656": 22.72}, "source": "Queen.pas", "chessboard-width": 15, "version": "fpc-3.0.0", "solutions": 2279184, "distribution": "free pascal"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.001, "1481395921": 0.001, "1481395921": 0.001}, "source": "Queen_node.js", "chessboard-width": 8, "version": "Node.js 6.9.x", "solutions": 92, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.002, "1481395921": 0.003, "1481395921": 0.003}, "source": "Queen_node.js", "chessboard-width": 9, "version": "Node.js 6.9.x", "solutions": 352, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.009, "1481395921": 0.009, "1481395921": 0.009}, "source": "Queen_node.js", "chessboard-width": 10, "version": "Node.js 6.9.x", "solutions": 724, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.044, "1481395921": 0.069, "1481395921": 0.069}, "source": "Queen_node.js", "chessboard-width": 11, "version": "Node.js 6.9.x", "solutions": 2680, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.202, "1481395921": 0.3, "1481395921": 0.3}, "source": "Queen_node.js", "chessboard-width": 12, "version": "Node.js 6.9.x", "solutions": 14200, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 0.67, "1481395921": 0.631, "1481395921": 0.631}, "source": "Queen_node.js", "chessboard-width": 13, "version": "Node.js 6.9.x", "solutions": 73712, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 3.52, "1481395921": 3.386, "1481395921": 3.386}, "source": "Queen_node.js", "chessboard-width": 14, "version": "Node.js 6.9.x", "solutions": 365596, "distribution": "Node.js"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"0": 21.769, "1481395921": 20.83, "1481395921": 20.83}, "source": "Queen_node.js", "chessboard-width": 15, "version": "Node.js 6.9.x", "solutions": 2279184, "distribution": "Node.js"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 0.01}, "source": "Queen.pl", "chessboard-width": 8, "version": "Perl 5.20", "solutions": 92, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 0.04}, "source": "Queen.pl", "chessboard-width": 9, "version": "Perl 5.20", "solutions": 352, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 0.38}, "source": "Queen.pl", "chessboard-width": 10, "version": "Perl 5.20", "solutions": 724, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 0.75}, "source": "Queen.pl", "chessboard-width": 11, "version": "Perl 5.20", "solutions": 2680, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 3.74}, "source": "Queen.pl", "chessboard-width": 12, "version": "Perl 5.20", "solutions": 14200, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 21.39}, "source": "Queen.pl", "chessboard-width": 13, "version": "Perl 5.20", "solutions": 73712, "distribution": "Perl"}, {"language": "Perl", "url": "https://www.perl.org", "durations": {"0": 130.04}, "source": "Queen.pl", "chessboard-width": 14, "version": "Perl 5.20", "solutions": 365596, "distribution": "Perl"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.0, "1481375444": 0.0, "1481375444": 0.0}, "source": "Queen.c", "chessboard-width": 8, "version": "gcc 5.x", "solutions": 92, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.0, "1481375444": 0.0, "1481375444": 0.0}, "source": "Queen.c", "chessboard-width": 9, "version": "gcc 5.x", "solutions": 352, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.0, "1481375444": 0.0, "1481375444": 0.0}, "source": "Queen.c", "chessboard-width": 10, "version": "gcc 5.x", "solutions": 724, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.01, "1481375444": 0.01, "1481375444": 0.01}, "source": "Queen.c", "chessboard-width": 11, "version": "gcc 5.x", "solutions": 2680, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.06, "1481375444": 0.09, "1481375444": 0.09}, "source": "Queen.c", "chessboard-width": 12, "version": "gcc 5.x", "solutions": 14200, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 0.4, "1481375444": 0.42, "1481375444": 0.42}, "source": "Queen.c", "chessboard-width": 13, "version": "gcc 5.x", "solutions": 73712, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 2.14, "1481375444": 2.1, "1481375444": 2.1}, "source": "Queen.c", "chessboard-width": 14, "version": "gcc 5.x", "solutions": 365596, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 13.24, "1481375444": 13.14, "1481375444": 13.14}, "source": "Queen.c", "chessboard-width": 15, "version": "gcc 5.x", "solutions": 2279184, "distribution": "GNU GCC"}, {"language": "C", "url": "https://gcc.gnu.org", "durations": {"0": 90.5, "1481375444": 87.230003, "1481375444": 87.230003}, "source": "Queen.c", "chessboard-width": 16, "version": "gcc 5.x", "solutions": 14772512, "distribution": "GNU GCC"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 0.002478, "0": 0.002478}, "source": "Queen.py", "chessboard-width": 8, "version": "Python 3.5", "solutions": 92, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 0.043517, "0": 0.043517}, "source": "Queen.py", "chessboard-width": 9, "version": "Python 3.5", "solutions": 352, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 0.109924, "0": 0.109924}, "source": "Queen.py", "chessboard-width": 10, "version": "Python 3.5", "solutions": 724, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 0.238306, "0": 0.238306}, "source": "Queen.py", "chessboard-width": 11, "version": "Python 3.5", "solutions": 2680, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 0.9954, "0": 0.9954}, "source": "Queen.py", "chessboard-width": 12, "version": "Python 3.5", "solutions": 14200, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 5.512121, "0": 5.512121}, "source": "Queen.py", "chessboard-width": 13, "version": "Python 3.5", "solutions": 73712, "distribution": "Python"}, {"language": "Python", "url": "https://www.python.org", "durations": {"0": 29.941906, "0": 29.941906}, "source": "Queen.py", "chessboard-width": 14, "version": "Python 3.5", "solutions": 365596, "distribution": "Python"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 0.02, "1481376897": 0.006, "1481482797": 0.017, "1481376787": 0.019, "1481482797": 0.017}, "source": "Queen.scala", "chessboard-width": 8, "version": "Scala 2.12.0", "solutions": 92, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 0.046, "1481376897": 0.034, "1481482797": 0.022, "1481376787": 0.023, "1481482797": 0.022}, "source": "Queen.scala", "chessboard-width": 9, "version": "Scala 2.12.0", "solutions": 352, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 0.11, "1481376897": 0.074, "1481482797": 0.04, "1481376787": 0.075, "1481482797": 0.04}, "source": "Queen.scala", "chessboard-width": 10, "version": "Scala 2.12.0", "solutions": 724, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 0.186, "1481376897": 0.215, "1481482797": 0.131, "1481376787": 0.216, "1481482797": 0.131}, "source": "Queen.scala", "chessboard-width": 11, "version": "Scala 2.12.0", "solutions": 2680, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 0.38, "1481376897": 0.31, "1481482797": 0.309, "1481376787": 0.269, "1481482797": 0.309}, "source": "Queen.scala", "chessboard-width": 12, "version": "Scala 2.12.0", "solutions": 14200, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 3.414, "1481376897": 0.815, "1481482797": 0.797, "1481376787": 0.906, "1481482797": 0.797}, "source": "Queen.scala", "chessboard-width": 13, "version": "Scala 2.12.0", "solutions": 73712, "distribution": "Scala"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"0": 71.332, "1481376897": 4.175, "1481482797": 4.01, "1481376787": 4.332, "1481482797": 4.01}, "source": "Queen.scala", "chessboard-width": 14, "version": "Scala 2.12.0", "solutions": 365596, "distribution": "Scala"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.005, "1481224891": 0.005, "1481604622": 0.001, "1481225804": 0.002}, "source": "Queen.kt", "chessboard-width": 8, "version": "Kotlin 1.0.5-2", "solutions": 92, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.02, "1481224891": 0.022, "1481604622": 0.009, "1481225804": 0.008}, "source": "Queen.kt", "chessboard-width": 9, "version": "Kotlin 1.0.5-2", "solutions": 352, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.061, "1481224891": 0.068, "1481604622": 0.02, "1481225804": 0.044}, "source": "Queen.kt", "chessboard-width": 10, "version": "Kotlin 1.0.5-2", "solutions": 724, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.266, "1481224891": 0.159, "1481604622": 0.087, "1481225804": 0.09}, "source": "Queen.kt", "chessboard-width": 11, "version": "Kotlin 1.0.5-2", "solutions": 2680, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.307, "1481224891": 0.233, "1481604622": 0.206, "1481225804": 0.181}, "source": "Queen.kt", "chessboard-width": 12, "version": "Kotlin 1.0.5-2", "solutions": 14200, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 0.999, "1481224891": 0.865, "1481604622": 0.849, "1481225804": 0.864}, "source": "Queen.kt", "chessboard-width": 13, "version": "Kotlin 1.0.5-2", "solutions": 73712, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 4.701, "1481224891": 4.792, "1481604622": 4.086, "1481225804": 4.254}, "source": "Queen.kt", "chessboard-width": 14, "version": "Kotlin 1.0.5-2", "solutions": 365596, "distribution": "Kotlin"}, {"language": "Kotlin", "url": "https://kotlinlang.org", "durations": {"1481174456": 30.592, "1481224891": 29.965, "1481604622": 27.662, "1481225804": 28.763}, "source": "Queen.kt", "chessboard-width": 15, "version": "Kotlin 1.0.5-2", "solutions": 2279184, "distribution": "Kotlin"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 22.862, "1481227124": 18.444, "1481225440": 168.304, "1481483183": 18.706, "1481483183": 18.706}, "source": "Queen.groovy", "chessboard-width": 14, "version": "Groovy 2.4.7", "solutions": 365596, "distribution": "Groovy"}, {"language": "Groovy", "url": "http://groovy-lang.org/", "durations": {"1481256636": 127.225, "1481483183": 111.985, "1481483183": 111.985}, "source": "Queen.groovy", "chessboard-width": 15, "version": "Groovy 2.4.7", "solutions": 2279184, "distribution": "Groovy"}, {"language": "Lua", "url": "https://www.lua.org/", "durations": {"1481363608": 0.03, "1481363608": 0.03}, "source": "Queen.lua", "chessboard-width": 10, "version": "Lua 5.1.x", "solutions": 724, "distribution": "Lua"}, {"language": "Lua", "url": "https://www.lua.org/", "durations": {"1481363608": 0.16, "1481363608": 0.16}, "source": "Queen.lua", "chessboard-width": 11, "version": "Lua 5.1.x", "solutions": 2680, "distribution": "Lua"}, {"language": "Lua", "url": "https://www.lua.org/", "durations": {"1481363608": 0.76, "1481363608": 0.76}, "source": "Queen.lua", "chessboard-width": 12, "version": "Lua 5.1.x", "solutions": 14200, "distribution": "Lua"}, {"language": "Lua", "url": "https://www.lua.org/", "durations": {"1481363608": 4.42, "1481363608": 4.42}, "source": "Queen.lua", "chessboard-width": 13, "version": "Lua 5.1.x", "solutions": 73712, "distribution": "Lua"}, {"language": "Lua", "url": "https://www.lua.org/", "durations": {"1481363608": 27.07, "1481363608": 27.07}, "source": "Queen.lua", "chessboard-width": 14, "version": "Lua 5.1.x", "solutions": 365596, "distribution": "Lua"}, {"language": "C#", "url": "http://www.mono-project.com/", "durations": {"1481375307": 0.001, "1481375307": 0.001}, "source": "Queen.cs", "chessboard-width": 8, "version": "Mono 4.6", "solutions": 92, "distribution": "Mono"}, {"language": "Scala", "url": "https://www.scala-lang.org/", "durations": {"1481376897": 37.863, "1481482797": 37.811, "1481482797": 37.811}, "source": "Queen.scala", "chessboard-width": 15, "version": "Scala 2.12.0", "solutions": 2279184, "distribution": "Scala"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.006, "1481378170": 0.004, "1481452863": 0.004, "1481452863": 0.004}, "source": "Queen.java", "chessboard-width": 8, "version": "Java 1.8.0", "solutions": 92, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.012, "1481378170": 0.007, "1481452863": 0.023, "1481452863": 0.023}, "source": "Queen.java", "chessboard-width": 9, "version": "Java 1.8.0", "solutions": 352, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.021, "1481378170": 0.053, "1481452863": 0.04, "1481452863": 0.04}, "source": "Queen.java", "chessboard-width": 10, "version": "Java 1.8.0", "solutions": 724, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.056, "1481378170": 0.106, "1481452863": 0.195, "1481452863": 0.195}, "source": "Queen.java", "chessboard-width": 11, "version": "Java 1.8.0", "solutions": 2680, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.183, "1481378170": 0.3, "1481452863": 0.286, "1481452863": 0.286}, "source": "Queen.java", "chessboard-width": 12, "version": "Java 1.8.0", "solutions": 14200, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 0.84, "1481378170": 1.122, "1481452863": 0.857, "1481452863": 0.857}, "source": "Queen.java", "chessboard-width": 13, "version": "Java 1.8.0", "solutions": 73712, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 5.084, "1481378170": 4.6, "1481452863": 4.537, "1481452863": 4.537}, "source": "Queen.java", "chessboard-width": 14, "version": "Java 1.8.0", "solutions": 365596, "distribution": "OpenJDK"}, {"language": "Java", "url": "http://openjdk.java.net/", "durations": {"0": 42.624, "1481378170": 30.199, "1481452863": 28.938, "1481452863": 28.938}, "source": "Queen.java", "chessboard-width": 15, "version": "Java 1.8.0", "solutions": 2279184, "distribution": "OpenJDK"}, {"language": "Javascript", "url": "https://nodejs.org/en", "durations": {"1481395921": 144.828, "1481395921": 144.828}, "source": "Queen_node.js", "chessboard-width": 16, "version": "Node.js 6.9.x", "solutions": 14772512, "distribution": "Node.js"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 0.01, "1481562438": 0.01}, "source": "Queen.pl", "chessboard-width": 8, "solutions": 92, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 0.1, "1481562438": 0.1}, "source": "Queen.pl", "chessboard-width": 9, "solutions": 352, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 0.26, "1481562438": 0.26}, "source": "Queen.pl", "chessboard-width": 10, "solutions": 724, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 0.72, "1481562438": 0.72}, "source": "Queen.pl", "chessboard-width": 11, "solutions": 2680, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 3.66, "1481562438": 3.66}, "source": "Queen.pl", "chessboard-width": 12, "solutions": 14200, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 21.17, "1481562438": 21.17}, "source": "Queen.pl", "chessboard-width": 13, "solutions": 73712, "distribution": "Perl"}, {"version": "Perl 5.2", "language": "Perl", "url": "https://www.perl.org", "durations": {"1481562438": 129.44, "1481562438": 129.44}, "source": "Queen.pl", "chessboard-width": 14, "solutions": 365596, "distribution": "Perl"}]
+[
+    {
+        "chessboard-width": 8,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 0.002260258
+        },
+        "language": "Ruby",
+        "solutions": 92,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 0.017019955
+        },
+        "language": "Ruby",
+        "solutions": 352,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 0.076365781
+        },
+        "language": "Ruby",
+        "solutions": 724,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 0.296894735
+        },
+        "language": "Ruby",
+        "solutions": 2680,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 1.050940633
+        },
+        "language": "Ruby",
+        "solutions": 14200,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 5.94508109
+        },
+        "language": "Ruby",
+        "solutions": 73712,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Ruby",
+        "durations": {
+            "0": 35.70416681
+        },
+        "language": "Ruby",
+        "solutions": 365596,
+        "source": "Queen.rb",
+        "url": "https://www.ruby-lang.org/en",
+        "version": "Ruby 2.3.0"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.0,
+            "1481135649": 0.0,
+            "1481374999": 0.0
+        },
+        "language": "D",
+        "solutions": 92,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.0,
+            "1481135649": 0.0,
+            "1481374999": 0.0
+        },
+        "language": "D",
+        "solutions": 352,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.004,
+            "1481135649": 0.003,
+            "1481374999": 0.003
+        },
+        "language": "D",
+        "solutions": 724,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.092,
+            "1481135649": 0.048,
+            "1481374999": 0.043
+        },
+        "language": "D",
+        "solutions": 2680,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.173,
+            "1481135649": 0.204,
+            "1481374999": 0.234
+        },
+        "language": "D",
+        "solutions": 14200,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 0.577,
+            "1481135649": 0.533,
+            "1481374999": 0.639
+        },
+        "language": "D",
+        "solutions": 73712,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 2.768,
+            "1481135649": 2.472,
+            "1481374999": 2.701
+        },
+        "language": "D",
+        "solutions": 365596,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 16.671,
+            "1481135649": 15.669,
+            "1481374999": 16.275
+        },
+        "language": "D",
+        "solutions": 2279184,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "D (DMD)",
+        "durations": {
+            "0": 112.155,
+            "1481135649": 113.624,
+            "1481374999": 110.361
+        },
+        "language": "D",
+        "solutions": 14772512,
+        "source": "Queen.d",
+        "url": "https://dlang.org",
+        "version": "dmd-2.072"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 0.0001311302185058594
+        },
+        "language": "FreeBASIC",
+        "solutions": 92,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 0.0005469322204589844
+        },
+        "language": "FreeBASIC",
+        "solutions": 352,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 0.002504825592041016
+        },
+        "language": "FreeBASIC",
+        "solutions": 724,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 0.03188896179199219
+        },
+        "language": "FreeBASIC",
+        "solutions": 2680,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 0.1326248645782471
+        },
+        "language": "FreeBASIC",
+        "solutions": 14200,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 1.583334922790527
+        },
+        "language": "FreeBASIC",
+        "solutions": 73712,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 5.090039014816284
+        },
+        "language": "FreeBASIC",
+        "solutions": 365596,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 34.5185661315918
+        },
+        "language": "FreeBASIC",
+        "solutions": 2279184,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "FreeBASIC",
+        "durations": {
+            "0": 218.3253200054169
+        },
+        "language": "FreeBASIC",
+        "solutions": 14772512,
+        "source": "Queen.bas",
+        "url": "http://www.freebasic.net",
+        "version": "fbc 1.05.0"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.019929,
+            "1481133937": 0.021999,
+            "1481310778": 0.022469
+        },
+        "language": "Python",
+        "solutions": 92,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.066056,
+            "1481133937": 0.073278,
+            "1481310778": 0.147015
+        },
+        "language": "Python",
+        "solutions": 352,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.092723,
+            "1481133937": 0.103288,
+            "1481310778": 0.083124
+        },
+        "language": "Python",
+        "solutions": 724,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.101253,
+            "1481133937": 0.105634,
+            "1481310778": 0.103403
+        },
+        "language": "Python",
+        "solutions": 2680,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.187909,
+            "1481133937": 0.198095,
+            "1481310778": 0.207961
+        },
+        "language": "Python",
+        "solutions": 14200,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 0.88396,
+            "1481133937": 0.838515,
+            "1481310778": 0.808625
+        },
+        "language": "Python",
+        "solutions": 73712,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 3.999066,
+            "1481133937": 3.802937,
+            "1481310778": 3.676653
+        },
+        "language": "Python",
+        "solutions": 365596,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "PyPy",
+        "durations": {
+            "1481085174": 25.284908,
+            "1481133937": 25.9002,
+            "1481310778": 25.630178
+        },
+        "language": "Python",
+        "solutions": 2279184,
+        "source": "Queen.py",
+        "url": "http://pypy.org",
+        "version": "pypy 5.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "PHP",
+        "durations": {
+            "0": 0.0023698806762695
+        },
+        "language": "PHP",
+        "solutions": 92,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "PHP",
+        "durations": {
+            "0": 0.068099975585938
+        },
+        "language": "PHP",
+        "solutions": 352,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "PHP",
+        "durations": {
+            "0": 0.041280031204224
+        },
+        "language": "PHP",
+        "solutions": 724,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "PHP",
+        "durations": {
+            "0": 0.25742101669312
+        },
+        "language": "PHP",
+        "solutions": 2680,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "PHP",
+        "durations": {
+            "0": 0.98229479789734
+        },
+        "language": "PHP",
+        "solutions": 14200,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "PHP",
+        "durations": {
+            "0": 6.1908190250397
+        },
+        "language": "PHP",
+        "solutions": 73712,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "PHP",
+        "durations": {
+            "0": 47.70192694664
+        },
+        "language": "PHP",
+        "solutions": 365596,
+        "source": "Queen.php",
+        "url": "https://secure.php.net",
+        "version": "PHP 5.6"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 0.005
+        },
+        "language": "CLisp",
+        "solutions": 92,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 0.01
+        },
+        "language": "CLisp",
+        "solutions": 352,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 0.174
+        },
+        "language": "CLisp",
+        "solutions": 724,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 0.28
+        },
+        "language": "CLisp",
+        "solutions": 2680,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 0.907
+        },
+        "language": "CLisp",
+        "solutions": 14200,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 5.112
+        },
+        "language": "CLisp",
+        "solutions": 73712,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Steel Bank",
+        "durations": {
+            "0": 30.646
+        },
+        "language": "CLisp",
+        "solutions": 365596,
+        "source": "Queen.lisp",
+        "url": "http://www.sbcl.org/",
+        "version": "sbcl-1.3.12"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.000302,
+            "1481310504": 0.000133
+        },
+        "language": "Go",
+        "solutions": 92,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.000674,
+            "1481310504": 0.000583
+        },
+        "language": "Go",
+        "solutions": 352,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.003133,
+            "1481310504": 0.002829
+        },
+        "language": "Go",
+        "solutions": 724,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.039134,
+            "1481310504": 0.035818
+        },
+        "language": "Go",
+        "solutions": 2680,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.157352,
+            "1481310504": 0.136622
+        },
+        "language": "Go",
+        "solutions": 14200,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 0.686377,
+            "1481310504": 0.521168
+        },
+        "language": "Go",
+        "solutions": 73712,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 2.624682,
+            "1481310504": 2.5565
+        },
+        "language": "Go",
+        "solutions": 365596,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 16.188268,
+            "1481310504": 15.643021
+        },
+        "language": "Go",
+        "solutions": 2279184,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "Google Go",
+        "durations": {
+            "0": 108.03436,
+            "1481310504": 105.024067
+        },
+        "language": "Go",
+        "solutions": 14772512,
+        "source": "Queen.go",
+        "url": "https://golang.org",
+        "version": "Go 1.7.4"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 0.074,
+            "1481225440": 0.138,
+            "1481227124": 0.162,
+            "1481256636": 0.217,
+            "1481483183": 0.094
+        },
+        "language": "Groovy",
+        "solutions": 92,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 0.144,
+            "1481225440": 0.174,
+            "1481227124": 0.167,
+            "1481256636": 0.218,
+            "1481483183": 0.12
+        },
+        "language": "Groovy",
+        "solutions": 352,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 0.26,
+            "1481225440": 0.309,
+            "1481227124": 0.283,
+            "1481256636": 0.337,
+            "1481483183": 0.228
+        },
+        "language": "Groovy",
+        "solutions": 724,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 0.487,
+            "1481225440": 0.553,
+            "1481227124": 0.537,
+            "1481256636": 0.507,
+            "1481483183": 0.494
+        },
+        "language": "Groovy",
+        "solutions": 2680,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 1.482,
+            "1481225440": 1.259,
+            "1481227124": 0.937,
+            "1481256636": 1.287,
+            "1481483183": 0.918
+        },
+        "language": "Groovy",
+        "solutions": 14200,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Groovy",
+        "durations": {
+            "0": 11.865,
+            "1481225440": 9.13,
+            "1481227124": 3.515,
+            "1481256636": 4.099,
+            "1481483183": 3.391
+        },
+        "language": "Groovy",
+        "solutions": 73712,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Mono",
+        "durations": {
+            "0": 0.001,
+            "1481375307": 0.006
+        },
+        "language": "C#",
+        "solutions": 352,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Mono",
+        "durations": {
+            "0": 0.004,
+            "1481375307": 0.014
+        },
+        "language": "C#",
+        "solutions": 724,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Mono",
+        "durations": {
+            "0": 0.03,
+            "1481375307": 0.091
+        },
+        "language": "C#",
+        "solutions": 2680,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Mono",
+        "durations": {
+            "0": 0.128,
+            "1481375307": 0.239
+        },
+        "language": "C#",
+        "solutions": 14200,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Mono",
+        "durations": {
+            "0": 0.779,
+            "1481375307": 0.747
+        },
+        "language": "C#",
+        "solutions": 73712,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Mono",
+        "durations": {
+            "0": 4.558,
+            "1481375307": 4.2
+        },
+        "language": "C#",
+        "solutions": 365596,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Mono",
+        "durations": {
+            "0": 39.269,
+            "1481375307": 26.078
+        },
+        "language": "C#",
+        "solutions": 2279184,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.01,
+            "1481398331": 0.01
+        },
+        "language": "C++",
+        "solutions": 2680,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.07,
+            "1481310291": 0.08,
+            "1481398331": 0.07
+        },
+        "language": "C++",
+        "solutions": 14200,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.38,
+            "1481310291": 0.37,
+            "1481398331": 0.37
+        },
+        "language": "C++",
+        "solutions": 73712,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 2.23,
+            "1481310291": 2.02,
+            "1481398331": 2.07
+        },
+        "language": "C++",
+        "solutions": 365596,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 13.55,
+            "1481310291": 13.1,
+            "1481398331": 12.98
+        },
+        "language": "C++",
+        "solutions": 2279184,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 88.66,
+            "1481310291": 87.21,
+            "1481398331": 87.76
+        },
+        "language": "C++",
+        "solutions": 14772512,
+        "source": "Queen.cxx",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.0,
+            "1481482656": 0.0
+        },
+        "language": "free pascal",
+        "solutions": 92,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.001,
+            "1481482656": 0.001
+        },
+        "language": "free pascal",
+        "solutions": 352,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.005,
+            "1481482656": 0.004
+        },
+        "language": "free pascal",
+        "solutions": 724,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.065,
+            "1481482656": 0.032
+        },
+        "language": "free pascal",
+        "solutions": 2680,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.237,
+            "1481482656": 0.274
+        },
+        "language": "free pascal",
+        "solutions": 14200,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 0.59,
+            "1481482656": 0.605
+        },
+        "language": "free pascal",
+        "solutions": 73712,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 3.396,
+            "1481482656": 3.322
+        },
+        "language": "free pascal",
+        "solutions": 365596,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "free pascal",
+        "durations": {
+            "0": 23.281,
+            "1481482656": 22.72
+        },
+        "language": "free pascal",
+        "solutions": 2279184,
+        "source": "Queen.pas",
+        "url": "http://www.freepascal.org",
+        "version": "fpc-3.0.0"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.001,
+            "1481395921": 0.001
+        },
+        "language": "Javascript",
+        "solutions": 92,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.002,
+            "1481395921": 0.003
+        },
+        "language": "Javascript",
+        "solutions": 352,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.009,
+            "1481395921": 0.009
+        },
+        "language": "Javascript",
+        "solutions": 724,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.044,
+            "1481395921": 0.069
+        },
+        "language": "Javascript",
+        "solutions": 2680,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.202,
+            "1481395921": 0.3
+        },
+        "language": "Javascript",
+        "solutions": 14200,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 0.67,
+            "1481395921": 0.631
+        },
+        "language": "Javascript",
+        "solutions": 73712,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 3.52,
+            "1481395921": 3.386
+        },
+        "language": "Javascript",
+        "solutions": 365596,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Node.js",
+        "durations": {
+            "0": 21.769,
+            "1481395921": 20.83
+        },
+        "language": "Javascript",
+        "solutions": 2279184,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Perl",
+        "durations": {
+            "0": 0.01,
+            "1481562438": 0.01
+        },
+        "language": "Perl",
+        "solutions": 92,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Perl",
+        "durations": {
+            "0": 0.04,
+            "1481562438": 0.1
+        },
+        "language": "Perl",
+        "solutions": 352,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Perl",
+        "durations": {
+            "0": 0.38,
+            "1481562438": 0.26
+        },
+        "language": "Perl",
+        "solutions": 724,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Perl",
+        "durations": {
+            "0": 0.75,
+            "1481562438": 0.72
+        },
+        "language": "Perl",
+        "solutions": 2680,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Perl",
+        "durations": {
+            "0": 3.74,
+            "1481562438": 3.66
+        },
+        "language": "Perl",
+        "solutions": 14200,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Perl",
+        "durations": {
+            "0": 21.39,
+            "1481562438": 21.17
+        },
+        "language": "Perl",
+        "solutions": 73712,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Perl",
+        "durations": {
+            "0": 130.04,
+            "1481562438": 129.44
+        },
+        "language": "Perl",
+        "solutions": 365596,
+        "source": "Queen.pl",
+        "url": "https://www.perl.org",
+        "version": "Perl 5.20"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.0,
+            "1481375444": 0.0
+        },
+        "language": "C",
+        "solutions": 92,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.0,
+            "1481375444": 0.0
+        },
+        "language": "C",
+        "solutions": 352,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.0,
+            "1481375444": 0.0
+        },
+        "language": "C",
+        "solutions": 724,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.01,
+            "1481375444": 0.01
+        },
+        "language": "C",
+        "solutions": 2680,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.06,
+            "1481375444": 0.09
+        },
+        "language": "C",
+        "solutions": 14200,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 0.4,
+            "1481375444": 0.42
+        },
+        "language": "C",
+        "solutions": 73712,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 2.14,
+            "1481375444": 2.1
+        },
+        "language": "C",
+        "solutions": 365596,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 13.24,
+            "1481375444": 13.14
+        },
+        "language": "C",
+        "solutions": 2279184,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "GNU GCC",
+        "durations": {
+            "0": 90.5,
+            "1481375444": 87.230003
+        },
+        "language": "C",
+        "solutions": 14772512,
+        "source": "Queen.c",
+        "url": "https://gcc.gnu.org",
+        "version": "gcc 5.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Python",
+        "durations": {
+            "0": 0.002478
+        },
+        "language": "Python",
+        "solutions": 92,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Python",
+        "durations": {
+            "0": 0.043517
+        },
+        "language": "Python",
+        "solutions": 352,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Python",
+        "durations": {
+            "0": 0.109924
+        },
+        "language": "Python",
+        "solutions": 724,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Python",
+        "durations": {
+            "0": 0.238306
+        },
+        "language": "Python",
+        "solutions": 2680,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Python",
+        "durations": {
+            "0": 0.9954
+        },
+        "language": "Python",
+        "solutions": 14200,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Python",
+        "durations": {
+            "0": 5.512121
+        },
+        "language": "Python",
+        "solutions": 73712,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Python",
+        "durations": {
+            "0": 29.941906
+        },
+        "language": "Python",
+        "solutions": 365596,
+        "source": "Queen.py",
+        "url": "https://www.python.org",
+        "version": "Python 3.5"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Scala",
+        "durations": {
+            "0": 0.02,
+            "1481376787": 0.019,
+            "1481376897": 0.006,
+            "1481482797": 0.017
+        },
+        "language": "Scala",
+        "solutions": 92,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Scala",
+        "durations": {
+            "0": 0.046,
+            "1481376787": 0.023,
+            "1481376897": 0.034,
+            "1481482797": 0.022
+        },
+        "language": "Scala",
+        "solutions": 352,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Scala",
+        "durations": {
+            "0": 0.11,
+            "1481376787": 0.075,
+            "1481376897": 0.074,
+            "1481482797": 0.04
+        },
+        "language": "Scala",
+        "solutions": 724,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Scala",
+        "durations": {
+            "0": 0.186,
+            "1481376787": 0.216,
+            "1481376897": 0.215,
+            "1481482797": 0.131
+        },
+        "language": "Scala",
+        "solutions": 2680,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Scala",
+        "durations": {
+            "0": 0.38,
+            "1481376787": 0.269,
+            "1481376897": 0.31,
+            "1481482797": 0.309
+        },
+        "language": "Scala",
+        "solutions": 14200,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Scala",
+        "durations": {
+            "0": 3.414,
+            "1481376787": 0.906,
+            "1481376897": 0.815,
+            "1481482797": 0.797
+        },
+        "language": "Scala",
+        "solutions": 73712,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Scala",
+        "durations": {
+            "0": 71.332,
+            "1481376787": 4.332,
+            "1481376897": 4.175,
+            "1481482797": 4.01
+        },
+        "language": "Scala",
+        "solutions": 365596,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.005,
+            "1481224891": 0.005,
+            "1481225804": 0.002,
+            "1481604622": 0.001
+        },
+        "language": "Kotlin",
+        "solutions": 92,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.02,
+            "1481224891": 0.022,
+            "1481225804": 0.008,
+            "1481604622": 0.009
+        },
+        "language": "Kotlin",
+        "solutions": 352,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.061,
+            "1481224891": 0.068,
+            "1481225804": 0.044,
+            "1481604622": 0.02
+        },
+        "language": "Kotlin",
+        "solutions": 724,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.266,
+            "1481224891": 0.159,
+            "1481225804": 0.09,
+            "1481604622": 0.087
+        },
+        "language": "Kotlin",
+        "solutions": 2680,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.307,
+            "1481224891": 0.233,
+            "1481225804": 0.181,
+            "1481604622": 0.206
+        },
+        "language": "Kotlin",
+        "solutions": 14200,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 0.999,
+            "1481224891": 0.865,
+            "1481225804": 0.864,
+            "1481604622": 0.849
+        },
+        "language": "Kotlin",
+        "solutions": 73712,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 4.701,
+            "1481224891": 4.792,
+            "1481225804": 4.254,
+            "1481604622": 4.086
+        },
+        "language": "Kotlin",
+        "solutions": 365596,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Kotlin",
+        "durations": {
+            "1481174456": 30.592,
+            "1481224891": 29.965,
+            "1481225804": 28.763,
+            "1481604622": 27.662
+        },
+        "language": "Kotlin",
+        "solutions": 2279184,
+        "source": "Queen.kt",
+        "url": "https://kotlinlang.org",
+        "version": "Kotlin 1.0.5-2"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Groovy",
+        "durations": {
+            "1481225440": 168.304,
+            "1481227124": 18.444,
+            "1481256636": 22.862,
+            "1481483183": 18.706
+        },
+        "language": "Groovy",
+        "solutions": 365596,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Groovy",
+        "durations": {
+            "1481256636": 127.225,
+            "1481483183": 111.985
+        },
+        "language": "Groovy",
+        "solutions": 2279184,
+        "source": "Queen.groovy",
+        "url": "http://groovy-lang.org/",
+        "version": "Groovy 2.4.7"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Lua",
+        "durations": {
+            "1481363608": 0.03
+        },
+        "language": "Lua",
+        "solutions": 724,
+        "source": "Queen.lua",
+        "url": "https://www.lua.org/",
+        "version": "Lua 5.1.x"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Lua",
+        "durations": {
+            "1481363608": 0.16
+        },
+        "language": "Lua",
+        "solutions": 2680,
+        "source": "Queen.lua",
+        "url": "https://www.lua.org/",
+        "version": "Lua 5.1.x"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Lua",
+        "durations": {
+            "1481363608": 0.76
+        },
+        "language": "Lua",
+        "solutions": 14200,
+        "source": "Queen.lua",
+        "url": "https://www.lua.org/",
+        "version": "Lua 5.1.x"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Lua",
+        "durations": {
+            "1481363608": 4.42
+        },
+        "language": "Lua",
+        "solutions": 73712,
+        "source": "Queen.lua",
+        "url": "https://www.lua.org/",
+        "version": "Lua 5.1.x"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Lua",
+        "durations": {
+            "1481363608": 27.07
+        },
+        "language": "Lua",
+        "solutions": 365596,
+        "source": "Queen.lua",
+        "url": "https://www.lua.org/",
+        "version": "Lua 5.1.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Mono",
+        "durations": {
+            "1481375307": 0.001
+        },
+        "language": "C#",
+        "solutions": 92,
+        "source": "Queen.cs",
+        "url": "http://www.mono-project.com/",
+        "version": "Mono 4.6"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Scala",
+        "durations": {
+            "1481376897": 37.863,
+            "1481482797": 37.811
+        },
+        "language": "Scala",
+        "solutions": 2279184,
+        "source": "Queen.scala",
+        "url": "https://www.scala-lang.org/",
+        "version": "Scala 2.12.0"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.006,
+            "1481378170": 0.004,
+            "1481452863": 0.004
+        },
+        "language": "Java",
+        "solutions": 92,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.012,
+            "1481378170": 0.007,
+            "1481452863": 0.023
+        },
+        "language": "Java",
+        "solutions": 352,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.021,
+            "1481378170": 0.053,
+            "1481452863": 0.04
+        },
+        "language": "Java",
+        "solutions": 724,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.056,
+            "1481378170": 0.106,
+            "1481452863": 0.195
+        },
+        "language": "Java",
+        "solutions": 2680,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.183,
+            "1481378170": 0.3,
+            "1481452863": 0.286
+        },
+        "language": "Java",
+        "solutions": 14200,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 0.84,
+            "1481378170": 1.122,
+            "1481452863": 0.857
+        },
+        "language": "Java",
+        "solutions": 73712,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 5.084,
+            "1481378170": 4.6,
+            "1481452863": 4.537
+        },
+        "language": "Java",
+        "solutions": 365596,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "OpenJDK",
+        "durations": {
+            "0": 42.624,
+            "1481378170": 30.199,
+            "1481452863": 28.938
+        },
+        "language": "Java",
+        "solutions": 2279184,
+        "source": "Queen.java",
+        "url": "http://openjdk.java.net/",
+        "version": "Java 1.8.0"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "Node.js",
+        "durations": {
+            "1481395921": 144.828
+        },
+        "language": "Javascript",
+        "solutions": 14772512,
+        "source": "Queen_node.js",
+        "url": "https://nodejs.org/en",
+        "version": "Node.js 6.9.x"
+    },
+    {
+        "chessboard-width": 8,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.002,
+            "1481736838": 0.002
+        },
+        "language": "Dart",
+        "solutions": 92,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 9,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.006,
+            "1481736838": 0.004
+        },
+        "language": "Dart",
+        "solutions": 352,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 10,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.019,
+            "1481736838": 0.018
+        },
+        "language": "Dart",
+        "solutions": 724,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 11,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.063,
+            "1481736838": 0.051
+        },
+        "language": "Dart",
+        "solutions": 2680,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 12,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.207,
+            "1481736838": 0.174
+        },
+        "language": "Dart",
+        "solutions": 14200,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 13,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 0.608,
+            "1481736838": 0.666
+        },
+        "language": "Dart",
+        "solutions": 73712,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 14,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 2.982,
+            "1481736838": 2.983
+        },
+        "language": "Dart",
+        "solutions": 365596,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 15,
+        "distribution": "Dart",
+        "durations": {
+            "1481736639": 19.082,
+            "1481736838": 19.026
+        },
+        "language": "Dart",
+        "solutions": 2279184,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    },
+    {
+        "chessboard-width": 16,
+        "distribution": "Dart",
+        "durations": {
+            "1481736838": 135.982
+        },
+        "language": "Dart",
+        "solutions": 14772512,
+        "source": "Queen.dart",
+        "url": "https://www.dartlang.org/",
+        "version": "Dart 1.21.0"
+    }
+]

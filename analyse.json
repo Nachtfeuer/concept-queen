@@ -113,6 +113,12 @@
             "language": "Lua",
             "distribution": "Lua",
             "url": "https://www.lua.org/"
+        },
+        {
+            "key": ".dart.",
+            "language": "Dart",
+            "distribution": "Dart",
+            "url": "https://www.dartlang.org/"
         }
     ]
 }

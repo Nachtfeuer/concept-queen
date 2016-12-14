@@ -22,6 +22,7 @@
 [**Running with CLisp**](#running-with-clisp)  
 [**Running with Kotlin**](#running-with-kotlin)  
 [**Running with Lua**](#running-with-lua)  
+[**Running with Dart**](#running-with-dart)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -272,4 +273,15 @@ scripts/run_lua.sh
 ```
 
 You can check then `reports/Queen.lua.log`
+for the results.
+
+## Running with Dart
+
+Homepage is: https://www.dartlang.org/
+
+```
+scripts/run_dart.sh
+```
+
+You can check then `reports/Queen.dart.log`
 for the results.

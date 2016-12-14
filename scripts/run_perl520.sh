@@ -16,7 +16,7 @@ else
             rm -f "${OUT}"
 
             echo "SOURCE=${SOURCE}" >> ${OUT}
-            echo "VERSION=Perl 5.2" >> ${OUT}
+            echo "VERSION=Perl 5.20" >> ${OUT}
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             for n in $(seq 8 14); do
