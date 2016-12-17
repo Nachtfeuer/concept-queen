@@ -1,92 +1,32 @@
-<!<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Queen algorithm design</title>
-        <style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Queen algorithm design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="design.js"></script>
+    <style>
         #design {
             background-color: white;
             color: black;
         }
-        </style>
+    </style>
 
-    </head>
+</head>
 
-    <body>
-        <canvas id="design" width="500px" height="500px"></canvas>
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h2>Queen Algorithm - Design</h2>
+        </div>
+        <canvas id="design" class="center-block" width="400px" height="400px"></canvas>
         <script>
-            const chessboardWidth =   8;
-            const width           = 500;
-            const margin          =  50;
-            const marginCell      =   0;
-            const cellw           = (width - 2*margin) / chessboardWidth;
-            const darkCell        = "rgb( 90,  90,  90)";
-            const lightCell       = "rgb(250, 250, 250)";
-
-            var canvas   = document.getElementById("design");
-            var context  = canvas.getContext("2d");
-
-            context.font = "14px Arial bold";
-            // draw row labels
-            for (var row = 0; row < chessboardWidth; ++row) {
-                context.fillText(chessboardWidth - row - 1,
-                                 margin*3/4, margin + cellw/2 + row * cellw);
-            }
-
-            // draw column labels
-            for (var column = 0; column < chessboardWidth; ++column) {
-                context.fillText(column,
-                                 margin + cellw/2 + column * cellw, width - margin*3/4);
-            }
-
-            // draw chessboard field
-            context.beginPath();
-            for (var column = 0; column < chessboardWidth; ++column) {
-                for (var row = 0; row < chessboardWidth; ++row) {
-                    context.fillStyle = darkCell;
-
-                    if (row % 2 == 0) {
-                        if (column % 2 == 0) {
-                            context.fillStyle = lightCell;
-                        }
-                    } else {
-                        if (column % 2 != 0) {
-                            context.fillStyle = lightCell;
-                        }                        
-                    }
-
-                    context.fillRect(
-                        margin + column * cellw,
-                        margin + row    * cellw,
-                        cellw-marginCell, cellw-marginCell);
-                    context.rect(
-                        margin + column * cellw,
-                        margin + row    * cellw,
-                        cellw-marginCell, cellw-marginCell);
-                }
-            }
-            context.closePath();
-            context.stroke();
-
-            // drawing the diagonals from top/left to bottom/right
-            context.beginPath();
-            context.fillStyle = "rgb(200, 200, 200)"
-            context.font = "11px Arial bold";
-            context.lineWidth = 0.2;
-
-            for (var k = 0; k < chessboardWidth; ++k) {
-                context.moveTo(5, 5+ k*cellw);
-                context.lineTo(margin - 5 + (chessboardWidth-k+1)*cellw, width - 5);
-                context.fillText((chessboardWidth-k-1), 5, (k+1)*cellw-cellw/2);
-
-                if (k > 0) {
-                    context.moveTo(5+ k*cellw, 5);
-                    context.lineTo(width - 5, width - 5 - k*cellw);
-                    context.fillText(7 + k, k*cellw - 8, 15);
-                }
-            }
-
-            context.closePath();
-            context.stroke();
+            var painter = new ChessboardPainter(8, document.getElementById("design"));
+            painter.paint();
         </script>
-    </body>
+    </div>
+</body>
+
 </html>
