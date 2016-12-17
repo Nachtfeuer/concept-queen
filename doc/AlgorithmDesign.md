@@ -6,10 +6,25 @@
 
 ## The basic algortihm
 
+![chessboard](images/chessboard,png)
+
 On a chessboard dimension `n x n` you should be able to place `n` queens
 that way that no queen does threaten another queen. For a `8 x 8` chessboard
 you will find `92` solutions. With an increasing size of the chessboard
-the number of solutions increases significantly. 
+the number of solutions increases significantly.
+
+As you can see a chessboard has two kind of diagonals each with
+`n x 2 - 1` diagonals. For better visualization I've shown the diagonals
+only from top/left to bottom/right. You easily can verify that the sum
+of one row and one column is the value of the diagonal; The calculation
+of the diagonals which from bottom/left to top/right is
+ `last Row index - row + column`. Some examples in next table.
+
+|  column  | row | top/left - bottom/right | bottom/left - top/right |
+| -        | -   | -                       | -                       |
+| 3        | 5   | 3 + 5 = 8               | 7 - 5 + 3 =  5          |
+| 6        | 2   | 6 + 2 = 8               | 7 - 2 + 6 = 11          |
+| 0        | 2   | 0 + 2 = 2               | 7 - 2 + 0 =  5          |
 
 ## A simple recursive function approach
 

@@ -37,6 +37,7 @@ class ChessboardPainter {
         this.paintColumnLabels(context);
         this.paintChessboard(context);
         this.paintDiagonals1(context);
+        // TODO: this.paintDiagonals2(context);
     }
 
     /**

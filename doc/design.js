@@ -33,6 +33,7 @@ var ChessboardPainter = (function () {
         this.paintColumnLabels(context);
         this.paintChessboard(context);
         this.paintDiagonals1(context);
+        // TODO: this.paintDiagonals2(context);
     };
     /**
      * Paint of the row labels (zero based indices).
