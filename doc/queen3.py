@@ -19,25 +19,27 @@ def queen(width, solutions=[]):
                 continue
 
             columns[column] = row
-            diagonals1[ixDiag1] = 1
-            diagonals2[ixDiag2] = 1
 
             if row == lastRow:
                 solutions.append(columns[:])
             else:
+                diagonals1[ixDiag1] = 1
+                diagonals2[ixDiag2] = 1
                 run(row+1, [x for x in available_columns if not x == column])
+                diagonals1[ixDiag1] = 0
+                diagonals2[ixDiag2] = 0
 
             columns[column] = -1
-            diagonals1[ixDiag1] = 0
-            diagonals2[ixDiag2] = 0
 
     run(row=0, available_columns=range(width))
 
 def solutionToString(solution):
+    """:returns: Provide on solution as string."""
     return ",".join(["(%s, %d)" % (i+1, v+1)
-                 for i, v in enumerate(solution)])
+                     for i, v in enumerate(solution)])
 
 def main():
+    """Application entry point."""
     output = False
     width = 8 # default
     if len(sys.argv) == 2:

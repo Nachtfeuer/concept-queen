@@ -20,26 +20,26 @@
 # WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
+# pylint: disable=E0602
 import sys
-import os
 import time
 
-OCCUPIED = 1     # field is in use
-FREE     = 0     # field is not used
-OUTPUT   = False # enable/disable of printing the solutions
+OUTPUT = False    # enable/disable of printing the solutions
+
 
 class Queen:
+    """Queen algorithm."""
     def __init__(self, width):
-        self.width            = width
-        self.lastRow          = self.width-1
+        self.width = width
+        self.lastRow = self.width-1
         # locked columns
-        self.columns          = self.width * [-1]
+        self.columns = self.width * [-1]
         # locked diagonals
-        numberOfDiagonals     = 2 * self.width - 1
-        self.diagonals1       = numberOfDiagonals * [0]
-        self.diagonals2       = numberOfDiagonals * [0]
+        numberOfDiagonals = 2 * self.width - 1
+        self.diagonals1 = numberOfDiagonals * [0]
+        self.diagonals2 = numberOfDiagonals * [0]
         # list of solutions
-        self.solutions        = set()
+        self.solutions = set()
 
     # starts the search with initial parameters and organizing
     # to search the half only
@@ -48,15 +48,15 @@ class Queen:
             ixDiag1 = column
             ixDiag2 = self.lastRow + column
             # occupying column and diagonals depending on current row and column
-            self.columns[column]     = 0
-            self.diagonals1[ixDiag1] = OCCUPIED
-            self.diagonals2[ixDiag2] = OCCUPIED
+            self.columns[column] = 0
+            self.diagonals1[ixDiag1] = 1
+            self.diagonals2[ixDiag2] = 1
 
             self.calculate(1, [k for k in range(self.width) if not k == column])
 
             # Freeing column and diagonals depending on current row and column
-            self.diagonals1[ixDiag1] = FREE
-            self.diagonals2[ixDiag2] = FREE
+            self.diagonals1[ixDiag1] = 0
+            self.diagonals2[ixDiag2] = 0
 
     # searches for all possible solutions
     def calculate(self, row, columnRange):
@@ -64,20 +64,20 @@ class Queen:
             # relating diagonale '\' depending on current row and column
             ixDiag1 = row + column
 
-            if self.diagonals1[ixDiag1] == OCCUPIED:
+            if self.diagonals1[ixDiag1] == 1:
                 continue
 
             # relating diagonale '/' depending on current row and column
             ixDiag2 = self.lastRow - row + column
 
             # is one of the relating diagonals OCCUPIED by a queen?
-            if self.diagonals2[ixDiag2] == OCCUPIED:
+            if self.diagonals2[ixDiag2] == 1:
                 continue
 
             # occupying column and diagonals depending on current row and column
-            self.columns[column]     = row
-            self.diagonals1[ixDiag1] = OCCUPIED
-            self.diagonals2[ixDiag2] = OCCUPIED
+            self.columns[column] = row
+            self.diagonals1[ixDiag1] = 1
+            self.diagonals2[ixDiag2] = 1
 
             # all queens have been placed?
             if row == self.lastRow:
@@ -97,8 +97,8 @@ class Queen:
                 self.calculate(row + 1, [k for k in columnRange if k != column])
 
             # Freeing column and diagonals depending on current row and column
-            self.diagonals1[ixDiag1] = FREE
-            self.diagonals2[ixDiag2] = FREE
+            self.diagonals1[ixDiag1] = 0
+            self.diagonals2[ixDiag2] = 0
 
     # printing all solutions where n queens are placed on a nxn board
     # without threaten another one.
@@ -109,12 +109,16 @@ class Queen:
                 line += "(%d,%d)" % (ix+1, solution[ix]+1)
             print(line)
 
+
 def main():
-    width = 8 # default
-    if len(sys.argv) == 2: width = int(sys.argv[1])
+    """Application entry point."""
+    width = 8  # default
+    if len(sys.argv) == 2:
+        width = int(sys.argv[1])
 
     instance = Queen(width)
-    print("Running %s with %s - version %s" % (sys.argv[0], sys.executable, sys.version))
+    print("Running %s with %s - version %s" % \
+          (sys.argv[0], sys.executable, sys.version))
     print("Queen raster (%dx%d)" % (instance.width, instance.width))
 
     Start = time.time()
@@ -122,7 +126,8 @@ def main():
     print("...took %f seconds." % (time.time() - Start))
     print("...%d solutions found." % (len(instance.solutions)))
 
-    if OUTPUT: instance.printAllSolutions()
+    if OUTPUT:
+        instance.printAllSolutions()
 
 if __name__ == '__main__':
     main()

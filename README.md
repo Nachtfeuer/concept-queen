@@ -35,7 +35,7 @@ in how easy or how difficult it is to implement the algorithm in other languages
 Also I am interested to compare the performance.
 
 For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
-Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin and Lua.
+Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin, Lua and Dart.
 
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
@@ -43,26 +43,26 @@ or an already provided language with an improved algorithm. However these
 are the rules
 
  - your algorithm should be able to accept an integer `n` representing a `n x n` chessboard
- - also - by default - you do not print all solutions your application as to collect all solutions.
+ - also - by default - you do not print all solutions of your application but you collect all.
  - The concrete language has to run isolated inside a Docker container;
    there are enough examples in folder `scripts`.
  - Keep it short and simple.
  - Looking at the times as measured while running through Travis CI you
    care for that you do not choose a chessboard dimension for which
-   the calculation takes longer than 2 minutes.
+   the calculation takes significantly longer than 2 minutes.
  - You provide the calculation for each chessboard dimension starting by 8
    until the last one that does fit to the time limitation.
  - The output format for each chessboard should be like the example shows. You can run the `analyse.py` scripts to see whether an assertion is thrown.
+ - You extend the analyse.json when you provide a new language.
+ - You extend the README.md (this file) for the new language.
+ - Try to provide the setup for CentOS7. I have not done it for Dart but for all others.
  
 ### Example for expected format
 ```
 Queen raster (11x11)
 ...took 0.353048 seconds.
 ...2680 solutions found.
-```    
-
-!!! More will come later !!!
-
+```
 
 ## Running with Python
 

@@ -110,8 +110,15 @@ of the diagonals which from bottom/left to top/right is
 | 0        | 2   | 0 + 2 = 2               | 7 - 2 + 0 =  5          |
 
 This lead us to an improved algorithm.
-The complete code you find in [queen2.py](queen2.py). The output
+The complete code you find in [queen3.py](queen3.py). The output
 looks like this:
+
+```bash
+Queen raster (11x11)
+...took 0.248641 seconds.
+...2680 solutions found.
+...one solution: (1, 1),(2, 7),(3, 2),(4, 8),(5, 3),(6, 9),(7, 4),(8, 10),(9, 5),(10, 11),(11, 6)
+```
 
 ```python
 def queen(width, solutions=[]):
@@ -131,31 +138,21 @@ def queen(width, solutions=[]):
                 continue
 
             columns[column] = row
-            diagonals1[ixDiag1] = 1
-            diagonals2[ixDiag2] = 1
 
             if row == lastRow:
                 solutions.append(columns[:])
             else:
+                diagonals1[ixDiag1] = 1
+                diagonals2[ixDiag2] = 1
                 run(row+1, [x for x in available_columns if not x == column])
+                diagonals1[ixDiag1] = 0
+                diagonals2[ixDiag2] = 0
 
             columns[column] = -1
-            diagonals1[ixDiag1] = 0
-            diagonals2[ixDiag2] = 0
 
     run(row=0, available_columns=range(width))
 ```
 
-The output looks like this one:
-
-```bash
-Queen raster (11x11)
-...took 0.375669 seconds.
-...2680 solutions found.
-...one solution: (1, 1),(2, 7),(3, 2),(4, 8),(5, 3),(6, 9),(7, 4),(8, 10),(9, 5),(10, 11),(11, 6)
-```
-
-As you can see faster that the prevvious (about the factor 2).
+As you can see faster that the prevvious (a bit more than the factor 2).
 The queen algorith you see in `src` bases on this.
-
 
