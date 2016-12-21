@@ -4,6 +4,7 @@
 
 ### Table Of Content
 [**Introduction**](#introduction)  
+[**Who wins?**](#who-wins)  
 [**Rules**](#rules)  
 [**Running with Python**](#running-with-python)  
 [**Running with Perl**](#running-with-perl)  
@@ -39,21 +40,39 @@ For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
 Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin, Lua,
 Dart and julia.
 
+## Who wins?
+That's not 100% clear; of course I've the measurements and from this
+C++ and C wins and also Go and D are not bad. However my domain languages
+are C++, Java and Python. As an exception In Python I did the most optimal
+implementation of the algorithm and at least with PyPy I were able to be faster
+as some other languages but still far away from the ones in the top four.
+I'm not expert in all those languages and I might not have choosen the optimal
+implementation; that's why the current results are not yet final.
+
+Also to say that the algorithms are single threaded and if I implement it
+in multithreaded some of the languages might be able to climb the ranking since
+some of those languages are designed for that purpose. Unfortunately I have not
+too much time and it might take a longer time until I can add that except
+YOU would contribute.
+
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
 or an already provided language with an improved algorithm. However these
 are the rules
 
+ - your constributed content has same license as the project (MIT)
  - your algorithm should be able to accept an integer `n` representing a `n x n` chessboard
  - also - by default - you do not print all solutions of your application but you collect all.
+   Memory consumption is relevant.
  - The concrete language has to run isolated inside a Docker container;
    there are enough examples in folder `scripts`.
  - Keep it short and simple.
- - Looking at the times as measured while running through Travis CI you
+ - Looking at the times as measured while running through Travis CI you should
    care for that you do not choose a chessboard dimension for which
    the calculation takes significantly longer than 2 minutes.
  - You provide the calculation for each chessboard dimension starting by 8
-   until the last one that does fit to the time limitation.
+   until the last one that does fit to the time limitation. A few seconds more
+   is not bad but more than 2 minutes will be highlighted red in the report.
  - The output format for each chessboard should be like the example shows. You can run the `analyse.py` scripts to see whether an assertion is thrown.
  - You extend the analyse.json when you provide a new language.
  - You extend the README.md (this file) for the new language.
@@ -193,6 +212,8 @@ Homepage is: https://www.scala-lang.org/
 Also have a read here:
 http://docs.scala-lang.org/overviews/collections/performance-characteristics.html
 
+I missed the `continue` statement.
+
 ```
 scripts/run_scala.sh
 ```
@@ -203,6 +224,10 @@ for the results.
 ## Running with Groovy
 
 Homepage is: http://groovy-lang.org/index.html
+
+In the newest version is also the option to use
+the compile static annotation but this would force
+you to give up the simple code.
 
 ```
 scripts/run_groovy.sh
@@ -258,8 +283,8 @@ Homepage is: https://www.lua.org/
 I have been a bit displeased with this language.
 The dump of what is called a table structure 
 seems not provided by simply calling print like
-you can do in Python (as example). Also it seems
-that this languages constantly changes its interfaces.
+you can do in Python (as an example). Also it seems
+that this language constantly changes its interfaces.
 Copying a table can be done in one release with `table.unpack`
 while not in another. In one release you can do `table.nget`
 while you have to do in another `#table` to get the number
@@ -299,7 +324,8 @@ for the results.
 
 ## Running with julia
 
-Homepage is: https://www.dartlang.org/
+Homepage is: http://julialang.org/
+
 
 ```
 scripts/run_julia.sh
