@@ -23,6 +23,7 @@
 [**Running with Kotlin**](#running-with-kotlin)  
 [**Running with Lua**](#running-with-lua)  
 [**Running with Dart**](#running-with-dart)  
+[**Running with julia**](#running-with-julia)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -35,7 +36,8 @@ in how easy or how difficult it is to implement the algorithm in other languages
 Also I am interested to compare the performance.
 
 For now this project covers Python, Perl, Ruby, PHP, C, C++, Java,
-Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin, Lua and Dart.
+Nodejs, FreeBasic, FreePascal, D, CSharp (Mono), Scala, Groovy, Go, Kotlin, Lua,
+Dart and julia.
 
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
@@ -293,4 +295,15 @@ scripts/run_dart.sh
 ```
 
 You can check then `reports/Queen.dart.log`
+for the results.
+
+## Running with julia
+
+Homepage is: https://www.dartlang.org/
+
+```
+scripts/run_julia.sh
+```
+
+You can check then `reports/Queen.jl.log`
 for the results.

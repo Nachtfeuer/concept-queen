@@ -119,6 +119,12 @@
             "language": "Dart",
             "distribution": "Dart",
             "url": "https://www.dartlang.org/"
+        },
+        {
+            "key": ".jl.",
+            "language": "julia",
+            "distribution": "julia",
+            "url": "http://julialang.org/"
         }
     ]
 }

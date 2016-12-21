@@ -78,7 +78,7 @@ println("Queen raster ($(queen.width)x$(queen.width))")
 start  = now()
 queen.run(1)
 println("...took $(Int(now() - start)/1000.0) seconds.")
-println("...", length(queen.solutions), " found.")
+println("...", length(queen.solutions), " solutions found.")
 
 if output
     for solution in queen.solutions
