@@ -5,6 +5,7 @@
 ### Table Of Content
 [**Introduction**](#introduction)  
 [**Who wins?**](#who-wins)  
+[**The performance report**](#the-performance-report)  
 [**Rules**](#rules)  
 [**Running with Python**](#running-with-python)  
 [**Running with Perl**](#running-with-perl)  
@@ -55,12 +56,25 @@ some of those languages are designed for that purpose. Unfortunately I have not
 too much time and it might take a longer time until I can add that except
 YOU would contribute.
 
+## The performance report
+You have to clone this repository; stay at root of the repository
+and then use Python which is usally available:
+
+```
+# Python < 3
+# python -m SimpleHTTPServer
+
+# python >= 3
+# python -m http.server
+```
+You then can open the report at http://localhost:8000/reports/report.html.
+
 ## Rules
 Everybody is - of course - invited to participate. You can use any language
 or an already provided language with an improved algorithm. However these
 are the rules
 
- - your constributed content has same license as the project (MIT)
+ - your contributed content has same license as the project (MIT)
  - your algorithm should be able to accept an integer `n` representing a `n x n` chessboard
  - also - by default - you do not print all solutions of your application but you collect all.
    Memory consumption is relevant.
