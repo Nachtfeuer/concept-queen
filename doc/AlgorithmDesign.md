@@ -4,6 +4,7 @@
 [**A simple recursive function approach**](#a-simple-recursice-function-approach)  
 [**Improved functional approch**](#improved-functional-approach)  
 [**The locking approach**](#the-locking-approach)  
+[**Multiprocessing**](#multiprocessing)  
 
 ## The basic algortihm
 
@@ -156,3 +157,54 @@ def queen(width, solutions=[]):
 As you can see faster that the prevvious (a bit more than the factor 2).
 The queen algorith you see in `src` bases on this.
 
+## Multiprocessing
+
+I experienced when using the threading library of 
+Python is mostly gets slower. However the Multiprocessing
+library is really interesting. I've been taken the 
+first algorithm on this page enabling that one for
+multiprocessing and here the result:
+
+```
+Queen raster (11x11)
+...took 0.920143 seconds.
+...2680 solutions found.
+...one solution: [(1, 1), (3, 2), (5, 3), (7, 4), (9, 5), (11, 6), (2, 7), (4, 8), (6, 9), (8, 10), (10, 11)]
+```
+
+That's a factor of 2 faster. The cpu count is 8 and you 
+can see in the resource monitor that all cpu's are used.
+
+The algorithm changes like you see next. The worker will
+get the width and a column taking this one and first row
+as first queen postion.
+
+```python
+def worker(data):
+    width, column = data
+    solutions = []
+    queen(width, 2, [(column, 1)], solutions)
+    return solutions
+```
+
+The execution of the whole algorithm works
+like following:
+
+```python
+solutions = []
+with multiprocessing.Pool(multiprocessing.cpu_count()) as pool:
+    for solution in pool.map(worker, [(width, column) for column in range(1, width+1)]):
+        solutions.extend(solution)
+```
+
+The complete code you find in [queen4.py](queen4.py)
+
+Of course - next time - the best algorithm implementation should
+be used to arrange it same way and I'm already curious to see 
+how it will perform. Also to investigate whether I can use that
+with pypy. The pypy took about 25-26 seconds on a 15x15 board;
+assuming it could run in half of the time it would be on the same
+level as C/C++. I know, it's not fair to compare it with a single
+threaded implementation but anyway any improvement is great and 
+of course I will check for some other languages too. One step
+after the other ...
