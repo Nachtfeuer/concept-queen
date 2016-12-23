@@ -2727,39 +2727,147 @@
     "distribution": "GNU GCC"
   }, 
   {
-    "source": "Queen.cxx", 
-    "chessboard-width": 8, 
-    "solutions": 92, 
     "language": "C++", 
     "url": "https://gcc.gnu.org", 
-    "distribution": "GNU GCC", 
-    "version": "gcc 5.x", 
     "durations": {
       "1482511618": 0.000139911
-    }
+    }, 
+    "source": "Queen.cxx", 
+    "chessboard-width": 8, 
+    "version": "gcc 5.x", 
+    "solutions": 92, 
+    "distribution": "GNU GCC"
   }, 
   {
-    "source": "Queen.cxx", 
-    "chessboard-width": 9, 
-    "solutions": 352, 
     "language": "C++", 
     "url": "https://gcc.gnu.org", 
-    "distribution": "GNU GCC", 
-    "version": "gcc 5.x", 
     "durations": {
       "1482511618": 0.000616413
+    }, 
+    "source": "Queen.cxx", 
+    "chessboard-width": 9, 
+    "version": "gcc 5.x", 
+    "solutions": 352, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511618": 0.00277213
+    }, 
+    "source": "Queen.cxx", 
+    "chessboard-width": 10, 
+    "version": "gcc 5.x", 
+    "solutions": 724, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 8, 
+    "solutions": 92, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 0.005
     }
   }, 
   {
-    "source": "Queen.cxx", 
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 9, 
+    "solutions": 352, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 0.003
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
     "chessboard-width": 10, 
     "solutions": 724, 
-    "language": "C++", 
-    "url": "https://gcc.gnu.org", 
-    "distribution": "GNU GCC", 
-    "version": "gcc 5.x", 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
     "durations": {
-      "1482511618": 0.00277213
+      "1482527158": 0.003
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 11, 
+    "solutions": 2680, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 0.048
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 12, 
+    "solutions": 14200, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 0.142
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 13, 
+    "solutions": 73712, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 0.319
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 14, 
+    "solutions": 365596, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 1.319
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 15, 
+    "solutions": 2279184, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 7.524
+    }
+  }, 
+  {
+    "source": "Queen_parallel.d", 
+    "chessboard-width": 16, 
+    "solutions": 14772512, 
+    "language": "D", 
+    "url": "https://dlang.org", 
+    "distribution": "D (DMD)", 
+    "version": "dmd-2.072", 
+    "durations": {
+      "1482527158": 50.682
     }
   }
 ]

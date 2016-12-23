@@ -37,7 +37,13 @@
             "url": "https://www.scala-lang.org/"
         },
         {
-            "key": ".d.",
+            "key": "Queen.d",
+            "language": "D",
+            "distribution": "D (DMD)",
+            "url": "https://dlang.org"
+        },
+        {
+            "key": "Queen_parallel.d",
             "language": "D",
             "distribution": "D (DMD)",
             "url": "https://dlang.org"

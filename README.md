@@ -211,9 +211,10 @@ Homepage is: https://dlang.org/
 
 ```
 scripts/run_d.sh
+SOURCE=Queen_parallel.d scripts/run_d.sh
 ```
 
-You can check then `reports/Queen.d.log`
+You can check then `reports/Queen.d.log` and `reports/Queen_parallel.d.log`
 for the results.
 
 ## Running with Mono

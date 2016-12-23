@@ -1,6 +1,12 @@
 #!/bin/bash
+SOURCE=${SOURCE:=Queen.d}
+UPPER_LIMIT=${UPPER_LIMIT:=16}
+
 if [ -$# -eq 0 ]; then
-    docker run --rm=true -v $PWD:/docker centos:7.2.1511 /docker/scripts/run_d.sh INIT
+    docker run --rm=true -v $PWD:/docker \
+           -e "SOURCE=$SOURCE" -e "UPPER_LIMIT=$UPPER_LIMIT" \
+           -i centos:7.2.1511 \
+           /docker/scripts/run_d.sh INIT
 else
     case $1 in
         INIT)
@@ -12,7 +18,6 @@ else
             $0 RUN
         ;;
         RUN)
-            SOURCE=Queen.d
             OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
@@ -21,9 +26,9 @@ else
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
-            dmd -O -release -inline -boundscheck=off ${SOURCE}
+            dmd -O -of=Queen -release -inline -boundscheck=off ${SOURCE}
 
-            for n in $(seq 8 16); do
+            for n in $(seq 8 ${UPPER_LIMIT}); do
                 ./Queen "${n}" | tee --append "${OUT}"
             done
         ;;
