@@ -150,6 +150,14 @@ scripts/run_gcc5_c.sh
 You can check then `reports/Queen.cxx.log` and `reports/Queen.c.log`
 for the results.
 
+When running like this:
+```
+SOURCE=Queen_openmp.cxx scripts/run_gcc5.sh
+```
+You can cheeck then `reports/Queen_openmp.cxx.log` for the results.
+It does use [http://www.openmp.org/](http://www.openmp.org/)
+running the queen algorithm significant faster using all available cpu's.
+
 ## Running with Nodejs 
 
 Homepage is: https://nodejs.org/en/

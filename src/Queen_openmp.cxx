@@ -22,11 +22,11 @@
  */
 #include <stdint.h>
 #include <stdlib.h>
-#include <time.h>
 
 #include <iostream>
 #include <vector>
 #include <list>
+#include <chrono>
 #include <memory>
 
 static const uint8_t FREE = 0;
@@ -153,15 +153,16 @@ int main(int argc, char* argv[]) {
 
     std::cout << "Queen raster (" << width << "x"
                                   << width << ")" << std::endl;
-    const clock_t start = clock();
+    auto start = std::chrono::high_resolution_clock::now();
 
     std::vector<std::unique_ptr<Queen>> queens(width);
     #pragma omp parallel for
     for (int column = 0; column < width; ++column) {
-        queens[column].reset(new Queen(width));
-        queens[column]->run(column);
+        auto queen = new Queen(width);
+        queen->run(column);
+        queens[column].reset(queen);
     }
-
+    // put all solutions together
     Queen::SolutionsType solutions;
     for (int column = 0; column < width; ++column) {
         for (const auto& solution: queens[column]->getSolutions()) {
@@ -169,9 +170,9 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    std::cout << "...took "
-               << static_cast<double>(clock() - start) / static_cast<double>(CLOCKS_PER_SEC)
-               << " seconds." << std::endl;
+    std::cout << "...took "  << std::chrono::duration<double>(
+              std::chrono::high_resolution_clock::now() - start).count()
+              << " seconds." << std::endl;
     std::cout << "..." << solutions.size() << " solutions found." << std::endl;
     if (OUTPUT) {
         Queen::printSolutions(solutions);

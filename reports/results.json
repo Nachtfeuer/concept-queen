@@ -907,7 +907,8 @@
     "url": "https://gcc.gnu.org", 
     "durations": {
       "0": 0.01, 
-      "1481398331": 0.01
+      "1481398331": 0.01, 
+      "1482511618": 0.017369
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 11, 
@@ -921,7 +922,8 @@
     "durations": {
       "1481310291": 0.08, 
       "0": 0.07, 
-      "1481398331": 0.07
+      "1481398331": 0.07, 
+      "1482511618": 0.169515
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 12, 
@@ -935,7 +937,8 @@
     "durations": {
       "1481310291": 0.37, 
       "0": 0.38, 
-      "1481398331": 0.37
+      "1481398331": 0.37, 
+      "1482511618": 0.450157
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 13, 
@@ -949,7 +952,8 @@
     "durations": {
       "1481310291": 2.02, 
       "0": 2.23, 
-      "1481398331": 2.07
+      "1481398331": 2.07, 
+      "1482511618": 2.14976
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 14, 
@@ -963,7 +967,8 @@
     "durations": {
       "1481310291": 13.1, 
       "0": 13.55, 
-      "1481398331": 12.98
+      "1481398331": 12.98, 
+      "1482511618": 13.5293
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 15, 
@@ -977,7 +982,8 @@
     "durations": {
       "1481310291": 87.21, 
       "0": 88.66, 
-      "1481398331": 87.76
+      "1481398331": 87.76, 
+      "1482511618": 91.62
     }, 
     "source": "Queen.cxx", 
     "chessboard-width": 16, 
@@ -2553,63 +2559,207 @@
     "distribution": "Python"
   }, 
   {
-    "source": "Queen.lua", 
-    "chessboard-width": 11, 
-    "solutions": 2680, 
     "language": "Lua", 
     "url": "http://luajit.org/", 
-    "distribution": "Luajit", 
-    "version": "Luajit 2.0.4", 
     "durations": {
       "1483785332": 0.02
-    }
+    }, 
+    "source": "Queen.lua", 
+    "chessboard-width": 11, 
+    "version": "Luajit 2.0.4", 
+    "solutions": 2680, 
+    "distribution": "Luajit"
   }, 
   {
-    "source": "Queen.lua", 
-    "chessboard-width": 12, 
-    "solutions": 14200, 
     "language": "Lua", 
     "url": "http://luajit.org/", 
-    "distribution": "Luajit", 
-    "version": "Luajit 2.0.4", 
     "durations": {
       "1483785332": 0.14
-    }
+    }, 
+    "source": "Queen.lua", 
+    "chessboard-width": 12, 
+    "version": "Luajit 2.0.4", 
+    "solutions": 14200, 
+    "distribution": "Luajit"
   }, 
   {
-    "source": "Queen.lua", 
-    "chessboard-width": 13, 
-    "solutions": 73712, 
     "language": "Lua", 
     "url": "http://luajit.org/", 
-    "distribution": "Luajit", 
-    "version": "Luajit 2.0.4", 
     "durations": {
       "1483785332": 0.78
-    }
+    }, 
+    "source": "Queen.lua", 
+    "chessboard-width": 13, 
+    "version": "Luajit 2.0.4", 
+    "solutions": 73712, 
+    "distribution": "Luajit"
   }, 
   {
-    "source": "Queen.lua", 
-    "chessboard-width": 14, 
-    "solutions": 365596, 
     "language": "Lua", 
     "url": "http://luajit.org/", 
-    "distribution": "Luajit", 
-    "version": "Luajit 2.0.4", 
     "durations": {
       "1483785332": 4.31
+    }, 
+    "source": "Queen.lua", 
+    "chessboard-width": 14, 
+    "version": "Luajit 2.0.4", 
+    "solutions": 365596, 
+    "distribution": "Luajit"
+  }, 
+  {
+    "language": "Lua", 
+    "url": "http://luajit.org/", 
+    "durations": {
+      "1483785332": 29.5
+    }, 
+    "source": "Queen.lua", 
+    "chessboard-width": 15, 
+    "version": "Luajit 2.0.4", 
+    "solutions": 2279184, 
+    "distribution": "Luajit"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.00109541
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 8, 
+    "solutions": 92, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.00192406
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 9, 
+    "solutions": 352, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.0342357
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 10, 
+    "solutions": 724, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.00894748
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 11, 
+    "solutions": 2680, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.185962
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 12, 
+    "solutions": 14200, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.324553
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 13, 
+    "solutions": 73712, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 0.934729
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 14, 
+    "solutions": 365596, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 4.5366
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 15, 
+    "solutions": 2279184, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "version": "gcc 5.x", 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "durations": {
+      "1482511119": 26.8852
+    }, 
+    "source": "Queen_openmp.cxx", 
+    "chessboard-width": 16, 
+    "solutions": 14772512, 
+    "distribution": "GNU GCC"
+  }, 
+  {
+    "source": "Queen.cxx", 
+    "chessboard-width": 8, 
+    "solutions": 92, 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "distribution": "GNU GCC", 
+    "version": "gcc 5.x", 
+    "durations": {
+      "1482511618": 0.000139911
     }
   }, 
   {
-    "source": "Queen.lua", 
-    "chessboard-width": 15, 
-    "solutions": 2279184, 
-    "language": "Lua", 
-    "url": "http://luajit.org/", 
-    "distribution": "Luajit", 
-    "version": "Luajit 2.0.4", 
+    "source": "Queen.cxx", 
+    "chessboard-width": 9, 
+    "solutions": 352, 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "distribution": "GNU GCC", 
+    "version": "gcc 5.x", 
     "durations": {
-      "1483785332": 29.5
+      "1482511618": 0.000616413
+    }
+  }, 
+  {
+    "source": "Queen.cxx", 
+    "chessboard-width": 10, 
+    "solutions": 724, 
+    "language": "C++", 
+    "url": "https://gcc.gnu.org", 
+    "distribution": "GNU GCC", 
+    "version": "gcc 5.x", 
+    "durations": {
+      "1482511618": 0.00277213
     }
   }
 ]

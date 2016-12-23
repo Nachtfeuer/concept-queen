@@ -22,11 +22,11 @@
  */
 #include <stdint.h>
 #include <stdlib.h>
-#include <time.h>
 
 #include <iostream>
 #include <vector>
 #include <list>
+#include <chrono>
 
 static const uint8_t FREE = 0;
 static const uint8_t OCCUPIED = 1;
@@ -144,13 +144,13 @@ int main(int argc, char* argv[]) {
     }
 
     Queen instance(width);
-    const clock_t start = clock();
+    auto start = std::chrono::high_resolution_clock::now();
     std::cout << "Queen raster (" << instance.getWidth() << "x"
                                   << instance.getWidth() << ")" << std::endl;
     instance.run();
-    std::cout << "...took "
-               << static_cast<double>(clock() - start) / static_cast<double>(CLOCKS_PER_SEC)
-               << " seconds." << std::endl;
+    std::cout << "...took "  << std::chrono::duration<double>(
+              std::chrono::high_resolution_clock::now() - start).count()
+              << " seconds." << std::endl;
     std::cout << "..." << instance.getNumberOfSolutions() << " solutions found." << std::endl;
     if (OUTPUT) {
         instance.printSolutions();

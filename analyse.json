@@ -67,6 +67,12 @@
             "url": "https://gcc.gnu.org"
         },
         {
+            "key": "openmp.cxx.",
+            "language": "C++",
+            "distribution": "GNU GCC",
+            "url": "https://gcc.gnu.org"
+        },
+        {
             "key": ".pypy.",
             "language": "Python",
             "distribution": "PyPy",

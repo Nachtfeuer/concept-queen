@@ -1,6 +1,11 @@
 #!/bin/bash
+SOURCE=${SOURCE:=Queen.cxx}
+UPPER_LIMIT=${UPPER_LIMIT:=16}
+
 if [ -$# -eq 0 ]; then
-    docker run --rm=true -v $PWD:/docker centos:7.2.1511 /docker/scripts/run_gcc5.sh INIT
+    docker run --rm=true -v $PWD:/docker \
+           -e "SOURCE=$SOURCE" -e "UPPER_LIMIT=$UPPER_LIMIT" \
+           -i centos:7.2.1511 /docker/scripts/run_gcc5.sh INIT
 else
     case $1 in
         INIT)
@@ -11,7 +16,6 @@ else
             scl enable devtoolset-4 "/docker/scripts/run_gcc5.sh RUN"
             ;;
         RUN)
-            SOURCE=Queen.cxx
             OUT=/docker/reports/${SOURCE}.log
 
             rm -f "${OUT}"
@@ -22,9 +26,9 @@ else
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
-            gcc -O3 -o queen --std=c++1y ${SOURCE} -lstdc++
+            g++ -O3 -o queen -fopenmp --std=c++1y ${SOURCE} -lstdc++
 
-            for n in $(seq 8 16); do
+            for n in $(seq 8 ${UPPER_LIMIT}); do
                 ./queen "${n}" | tee --append "${OUT}"
             done
             ;;
