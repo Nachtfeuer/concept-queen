@@ -4,6 +4,9 @@ import sys
 import time
 import multiprocessing
 
+from contextlib import closing
+
+
 def queen(width, row=1, solution=[], solutions=[]):
     for column in range(1, width+1):
         found = False
@@ -29,6 +32,7 @@ def worker(data):
     solutions = []
     queen(width, 2, [(column, 1)], solutions)
     return solutions
+
 def main():
     width = 8 # default
     if len(sys.argv) == 2:
@@ -38,9 +42,10 @@ def main():
     start = time.time()
 
     solutions = []
-    with multiprocessing.Pool(multiprocessing.cpu_count()) as pool:
+    with closing(multiprocessing.Pool(multiprocessing.cpu_count())) as pool:
         for solution in pool.map(worker, [(width, column) for column in range(1, width+1)]):
             solutions.extend(solution)
+        pool.terminate()
 
     print("...took %f seconds." % (time.time() - start))
     print("...%d solutions found." % len(solutions))

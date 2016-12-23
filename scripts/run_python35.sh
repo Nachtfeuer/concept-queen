@@ -1,6 +1,11 @@
 #!/bin/bash
+SOURCE=${SOURCE:=Queen.py}
+UPPER_LIMIT=${UPPER_LIMIT:=14}
+
 if [ -$# -eq 0 ]; then
-    docker run --rm=true -v $PWD:/docker centos:7.2.1511 /docker/scripts/run_python35.sh INIT
+    docker run --rm=true -v $PWD:/docker \
+           -e "SOURCE=$SOURCE" -e "UPPER_LIMIT=$UPPER_LIMIT" \
+           -i centos:7.2.1511 /docker/scripts/run_python35.sh INIT
 else
     case $1 in
         INIT)
@@ -11,7 +16,6 @@ else
             scl enable rh-python35 "/docker/scripts/run_python35.sh RUN"
         ;;
         RUN)
-            SOURCE=Queen.py
             OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
@@ -19,7 +23,7 @@ else
             echo "VERSION=Python 3.5" >> ${OUT}
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
-            for n in $(seq 8 14); do
+            for n in $(seq 8 ${UPPER_LIMIT}); do
                 python /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;

@@ -147,6 +147,7 @@ angular.module('report').controller("ReportController", ['$scope', function($sco
         for (i in $scope.data) {
             if ($scope.data[i].language === entry.language &&
                 $scope.data[i].version === entry.version &&
+                $scope.data[i].source === entry.source &&
                 $scope.data[i]["chessboard-width"] >= 12) {
                 sorted.push([
                     $scope.data[i]["chessboard-width"],

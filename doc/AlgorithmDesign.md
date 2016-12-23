@@ -154,8 +154,8 @@ def queen(width, solutions=[]):
     run(row=0, available_columns=range(width))
 ```
 
-As you can see faster that the prevvious (a bit more than the factor 2).
-The queen algorith you see in `src` bases on this.
+As you can see it's faster as the previous (a bit more than the factor 2).
+The queen algorithm you see in `src` bases on this.
 
 ## Multiprocessing
 
@@ -192,19 +192,31 @@ like following:
 
 ```python
 solutions = []
-with multiprocessing.Pool(multiprocessing.cpu_count()) as pool:
+with closing(multiprocessing.Pool(multiprocessing.cpu_count())) as pool:
     for solution in pool.map(worker, [(width, column) for column in range(1, width+1)]):
         solutions.extend(solution)
+    pool.terminate()
 ```
 
 The complete code you find in [queen4.py](queen4.py)
+Also pypy is able to run that code again a factor 2 faster.
 
-Of course - next time - the best algorithm implementation should
-be used to arrange it same way and I'm already curious to see 
-how it will perform. Also to investigate whether I can use that
-with pypy. The pypy took about 25-26 seconds on a 15x15 board;
-assuming it could run in half of the time it would be on the same
-level as C/C++. I know, it's not fair to compare it with a single
-threaded implementation but anyway any improvement is great and 
-of course I will check for some other languages too. One step
-after the other ...
+The multiprocessing applied to Queen.py in src folder
+saved as Queen_multiprocessing.py:
+
+```
+Running /docker/src/Queen_multiprocessing.py with /opt/rh/rh-python35/root/usr/bin/python - version 3.5.1 (default, Oct 21 2016, 21:37:19) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-4)]
+Queen raster (14x14)
+...took 9.640661 seconds.
+...365596 solutions found.
+```
+
+The average time for single threaded is approximately 29 seconds so 
+we have nearly factor 3 as improvement. With this I can run the algortihm
+now for 15x15 which results in 54 seconds. 16x16 still unreachable
+by given limit of 2 minutes but a great improvement.
+
+On pypy the multiprocessing seems not to having any effect;
+with an older version it's significant slower than the
+single threaded version.

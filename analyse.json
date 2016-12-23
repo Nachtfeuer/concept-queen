@@ -79,6 +79,12 @@
             "url": "https://www.python.org"
         },
         {
+            "key": "multiprocessing.py.",
+            "language": "Python",
+            "distribution": "Python",
+            "url": "https://www.python.org"
+        },
+        {
             "key": ".go.",
             "language": "Go",
             "distribution": "Google Go",
