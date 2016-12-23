@@ -36,7 +36,7 @@ def process_buffer(text_buffer, language, distribution, url):
             'url': url,
             'distribution': distribution,
             'chessboard-width': int(match.group("n1")),
-            'durations': {int(timestamp): float(match.group('duration'))},
+            'durations': {str(timestamp): float(match.group('duration'))},
             'solutions': int(match.group('solutions')),
             'source': source,
             'version': version
@@ -60,6 +60,8 @@ def find_data(all_data, entry):
         if data["language"] != entry["language"]:
             continue
         if data["version"] != entry["version"]:
+            continue
+        if data["source"] != entry["source"]:
             continue
         return data
     return None
@@ -93,7 +95,7 @@ def main():
                     break
 
     with open("reports/results.json", "w") as handle:
-        handle.write(json.dumps(data))
+        handle.write(json.dumps(data, indent=2))
 
 if __name__ == "__main__":
     main()
