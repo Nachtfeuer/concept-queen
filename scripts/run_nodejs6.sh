@@ -19,7 +19,7 @@ else
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             # please read here: http://prestonparry.com/articles/IncreaseNodeJSMemorySize/
-            for n in $(seq 8 16); do
+            for n in $(seq 8 15); do
                 node --max_old_space_size=4096 /docker/src/${SOURCE} "${n}" | tee --append "${OUT}"
             done
         ;;

@@ -27,7 +27,7 @@ else
             cp /docker/src/${SOURCE} .
             fbc -O 3 ${SOURCE}
 
-            for n in $(seq 8 16); do
+            for n in $(seq 8 15); do
                 ./Queen "${n}" | tee --append "${OUT}"
             done
         ;;
