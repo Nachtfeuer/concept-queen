@@ -1,21 +1,24 @@
 #!/bin/bash
+SOURCE=${SOURCE:=Queen.go}
+UPPER_LIMIT=${UPPER_LIMIT:=16}
+
 if [ -$# -eq 0 ]; then
-    docker run --rm=true -v $PWD:/docker centos:7.2.1511 /docker/scripts/run_go.sh INIT
+    docker run --rm=true -v $PWD:/docker \
+           -e "SOURCE=$SOURCE" -e "UPPER_LIMIT=$UPPER_LIMIT" \
+           -i centos:7.2.1511 /docker/scripts/run_go.sh INIT
 else
     case $1 in
         INIT)
             yum install -y wget
-            name=FreeBASIC-1.05.0-linux-x86_64
             echo "downloading of Go..."
             name=go1.7.4.linux-amd64
-            wget -q https://storage.googleapis.com/golang/${name}.tar.gz
+            wget -q --no-check-certificate https://storage.googleapis.com/golang/${name}.tar.gz
             tar -C /usr/local -xvzf ${name}.tar.gz > /dev/null
             export PATH=$PATH:/usr/local/go/bin
             go version
             $0 RUN
             ;;
         RUN)
-            SOURCE=Queen.go
             OUT=/docker/reports/${SOURCE}.log
             rm -f "${OUT}"
 
@@ -24,9 +27,9 @@ else
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
             cp /docker/src/${SOURCE} .
-            go build ${SOURCE}
+            go build -o Queen ${SOURCE}
 
-            for n in $(seq 8 16); do
+            for n in $(seq 8 ${UPPER_LIMIT}); do
                 ./Queen "${n}" | tee --append "${OUT}"
             done
             ;;

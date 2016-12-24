@@ -265,9 +265,10 @@ Homepage is: https://golang.org/
 
 ```
 scripts/run_go.sh
+SOURCE=Queen_parallel.go scripts/run_go.sh
 ```
 
-You can check then `reports/Queen.go.log`
+You can check then `reports/Queen.go.log` and `reports/Queen_parallel.go.log`
 for the results.
 
 

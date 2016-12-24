@@ -97,7 +97,13 @@
             "url": "https://www.python.org"
         },
         {
-            "key": ".go.",
+            "key": "Queen.go.",
+            "language": "Go",
+            "distribution": "Google Go",
+            "url": "https://golang.org"
+        },
+        {
+            "key": "Queen_parallel.go.",
             "language": "Go",
             "distribution": "Google Go",
             "url": "https://golang.org"
