@@ -1,3 +1,4 @@
 *.log
 src/Queen.js
 tags
+one_solution.json

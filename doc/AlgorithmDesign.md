@@ -5,6 +5,8 @@
 [**Improved functional approch**](#improved-functional-approach)  
 [**The locking approach**](#the-locking-approach)  
 [**Multiprocessing**](#multiprocessing)  
+[**Find one solution only**](#find-one-solution-only)  
+[**Some Links**](#some-links)  
 
 ## The basic algortihm
 
@@ -220,3 +222,45 @@ by given limit of 2 minutes but a great improvement.
 On pypy the multiprocessing seems not to having any effect;
 with an older version it's significant slower than the
 single threaded version.
+
+
+## Find one solution only
+
+Latests when you start to find one solution only per chessboard size then
+you will see how dramatically time increases. The memory is now not 
+a problem anymore which forced swapping of system resource after a while.
+There are too many false tries until the algorithm does reach the last 
+row. Here the duration in seconds:
+
+| Chessboard size | Duration  |
+| ---             | ---       |
+| 8 x 8 - 12 x 12 |   0.00000 |
+| 13 x 13         |   0.00400 |
+| 14 x 14         |   0.00800 |
+| 15 x 15         |   0.01200 |
+| 16 x 16         |   0.04800 |
+| 17 x 17         |   0.04000 |
+| 18 x 18         |   0.14800 |
+| 19 x 19         |   0.09203 |
+| 20 x 20         |   1.10800 |
+| 21 x 21         |   0.42000 |
+| 22 x 22         |   9.28803 |
+| 23 x 23         |   3.13599 |
+| 24 x 24         |   8.27200 |
+| 25 x 25         |  11.68800 |
+| 26 x 26         |  20.74800 |
+| 27 x 27         |  34.72400 |
+| 28 x 28         |  53.75600 |
+| 29 x 29         | 587.69042 |
+| 30 x 30         | 942.39768 |
+
+The complete code you find in [Queen_one_solution.py](Queen_one_solution.py).
+The results are written into a `one_solution.json`. Of course with C++ we 
+can be much faster but Python was the start of this project and for
+analyzing purpose sufficient.
+
+## Some links
+
+* http://www.jsomers.com/nqueen_demo/nqueens.html
+* https://sites.google.com/site/nqueensolver/
+* ...
