@@ -50,11 +50,10 @@ as some other languages but still far away from the ones in the top four.
 I'm not expert in all those languages and I might not have choosen the optimal
 implementation; that's why the current results are not yet final.
 
-Also to say that the algorithms are single threaded and if I implement it
+Also to say that most algorithms are single threaded only and if I implement it
 in multithreaded some of the languages might be able to climb the ranking since
-some of those languages are designed for that purpose. Unfortunately I have not
-too much time and it might take a longer time until I can add that except
-YOU would contribute.
+some of those languages are designed for that purpose. I did for Python; other
+languages might follow if I have time ...
 
 ## The performance report
 You have to clone this repository; stay at root of the repository
@@ -292,7 +291,7 @@ for the results.
 
 ## Running with Lua
 
-Homepage is: https://www.lua.org/
+Homepage is: https://www.lua.org/ and http://luajit.org/.
 
 I have been a bit displeased with this language.
 The dump of what is called a table structure 
@@ -311,9 +310,10 @@ do those things easier/better ... be welcome.
 
 ```
 scripts/run_lua.sh
+scripts/run_luajit.sh
 ```
 
-You can check then `reports/Queen.lua.log`
+You can check then `reports/Queen.lua.log` and `reports/Queen.luajit.log`
 for the results.
 
 ## Running with Dart

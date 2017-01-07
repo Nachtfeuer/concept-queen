@@ -121,6 +121,12 @@
             "url": "https://www.lua.org/"
         },
         {
+            "key": ".luajit.",
+            "language": "Lua",
+            "distribution": "Luajit",
+            "url": "http://luajit.org/"
+        },
+        {
             "key": ".dart.",
             "language": "Dart",
             "distribution": "Dart",

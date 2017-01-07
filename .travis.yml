@@ -24,6 +24,7 @@ script:
  - scripts/run_go.sh
  - scripts/run_kotlin.sh
  - scripts/run_lua.sh
+ - scripts/run_luajit.sh
  - scripts/run_dart.sh
  - scripts/run_julia.sh
 
