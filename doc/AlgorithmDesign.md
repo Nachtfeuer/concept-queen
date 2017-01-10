@@ -259,6 +259,25 @@ The results are written into a `one_solution.json`. Of course with C++ we
 can be much faster but Python was the start of this project and for
 analyzing purpose sufficient.
 
+One last change I did was to shuffle the columns. In worst cast the performance would 
+be same as you see in table above but also following results are possible:
+
+| Chessboard size | Duration  |
+| ---             | ---       |
+| 26 x 26         |  4.46992  |
+| 27 x 27         |  2.24099  |
+| 28 x 28         |  3.42310  |
+| 29 x 29         | 16.62023  |
+| 30 x 30         | 12.36789  |
+
+Now one further improvement would be possible: the algorithm could measure the
+time and reaching a time limit it could stop restarting again until a solution
+is found. The idea is to avoid - if possible - to be forced to wait several
+minutes. The difference between 12 and 942 let me think this approach could work.
+Instead of time - eventually - it might make sense to analyse the steps depending
+on the board resolution; it could be that also this is a limit that can be taken
+unless the random mode finds the optimal path.
+
 ## Some links
 
 * http://www.jsomers.com/nqueen_demo/nqueens.html

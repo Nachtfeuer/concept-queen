@@ -24,6 +24,7 @@
 import sys
 import time
 import json
+import random
 import multiprocessing
 from contextlib import closing
 
@@ -66,6 +67,7 @@ class Queen(object):
 
     def calculate(self, row, column_range):
         """searches for all possible solutions."""
+        random.shuffle(column_range)
         for column in column_range:
             # relating diagonale '\' depending on current row and column
             ix_diag1 = row + column
