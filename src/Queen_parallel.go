@@ -53,14 +53,22 @@ func (q *Queen) Init(width int) {
 }
 
 // Dump prints one solution.
-func (q *Queen) Dump(solution []int) {
+func Dump(solution []int) {
 	for x, y := range solution {
 		fmt.Printf("[%d, %d]", x+1, y+1)
 	}
 	fmt.Printf("\n")
 }
 
-func (q *Queen) Run(row int) {
+func (q *Queen) Run(column int) {
+	q.columns[column] = 0
+	q.diagonals1[column] = 1
+	q.diagonals2[q.lastRow+column] = 1
+	q.Calculate(1)
+}
+
+// Calulate does a recursive search for the solutions
+func (q *Queen) Calculate(row int) {
 	for column := 0; column < q.width; column++ {
 		// is column occupied?
 		if q.columns[column] >= 0 {
@@ -86,7 +94,7 @@ func (q *Queen) Run(row int) {
 			copy(solution, q.columns)
 			q.solutions = append(q.solutions, solution)
 		} else {
-			q.Run(row + 1)
+			q.Calculate(row + 1)
 		}
 
 		q.columns[column] = -1
@@ -102,17 +110,36 @@ func main() {
 		width, _ = strconv.Atoi(os.Args[1])
 	}
 
-	queen := Queen{}
-	queen.Init(width)
-	fmt.Printf("Queen raster (%dx%d)\n", queen.width, queen.width)
+	fmt.Printf("Queen raster (%dx%d)\n", width, width)
+	queens := make([]Queen, width)
 
 	start := time.Now()
-	queen.Run(0)
+	c := make(chan bool)
+	for column := 0; column < width; column++ {
+		// run calculation in parallel
+		go func(column int, c chan bool) {
+			queens[column] = Queen{}
+			queens[column].Init(width)
+			queens[column].Run(column)
+			c <- true
+		}(column, c)
+	}
+	// waiting for all solutions
+	for column := 0; column < width; column++ {
+		<-c
+	}
+
+	var solutions [][]int
+	for _, queen := range queens {
+		for _, solution := range queen.solutions {
+			solutions = append(solutions, solution)
+		}
+	}
 
 	fmt.Printf("...took %f seconds.\n", time.Since(start).Seconds())
-	fmt.Printf("...%d solutions found.\n", len(queen.solutions))
+	fmt.Printf("...%d solutions found.\n", len(solutions))
 
-	//for _, solution := range queen.solutions {
-	//  queen.Dump(solution)
+	// for _, solution := range solutions {
+	//	Dump(solution)
 	//}
 }
