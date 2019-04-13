@@ -27,6 +27,7 @@ script:
  - scripts/run_luajit.sh
  - scripts/run_dart.sh
  - scripts/run_julia.sh
+ - scripts/run_rust.sh
 
 notifications:
     email:

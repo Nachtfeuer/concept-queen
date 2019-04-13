@@ -155,6 +155,12 @@
             "language": "julia",
             "distribution": "julia",
             "url": "http://julialang.org/"
+        },
+        {
+            "key": ".rs.",
+            "language": "Rust",
+            "distribution": "Rust",
+            "url": "https://www.rust-lang.org"
         }
     ]
 }

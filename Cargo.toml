@@ -1,0 +1,7 @@
+[package]
+name = "Queen"
+version = "1.0.0"
+
+[[bin]]
+name = "queen"
+path = "src/Queen.rs"
