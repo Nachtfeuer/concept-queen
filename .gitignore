@@ -2,3 +2,5 @@
 src/Queen.js
 tags
 one_solution.json
+Cargo.lock
+target/
