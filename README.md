@@ -26,6 +26,7 @@
 [**Running with Lua**](#running-with-lua)  
 [**Running with Dart**](#running-with-dart)  
 [**Running with julia**](#running-with-julia)  
+[**Running with Rust**](#running-with-rust)  
 
 ## Introduction
 The queen algorithm in different languages. The algorithm is about a `n x n`
@@ -356,4 +357,16 @@ scripts/run_julia.sh
 ```
 
 You can check then `reports/Queen.jl.log`
+for the results.
+
+## Running with Rust
+
+Homepage is: https://www.rust-lang.org/
+
+
+```
+scripts/run_rust.sh
+```
+
+You can check then `reports/Queen.rs.log`
 for the results.

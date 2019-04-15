@@ -9,12 +9,12 @@ if [ -$# -eq 0 ]; then
 else
     case $1 in
         INIT)
-            yum install -y wget
+            yum install -y wget gcc gcc-c++ make
             echo "downloading of Rust..."
             name=rust-1.34.0-x86_64-unknown-linux-gnu
             wget -q --no-check-certificate https://static.rust-lang.org/dist/${name}.tar.gz
             tar -xvzf ${name}.tar.gz > /dev/null
-            ${name}/install.sh
+            ${name}/install.sh > /dev/null
             cargo --version
             rustc --version
             $0 RUN
@@ -27,11 +27,11 @@ else
             echo "VERSION=Rust 1.34.0" >> ${OUT}
             echo "TIMESTAMP=$(date +%s)" >> ${OUT}
 
-            cp /docker/src/${SOURCE} .
+            cd /docker
             cargo build --release --bin queen
 
             for n in $(seq 8 ${UPPER_LIMIT}); do
-                ./queen "${n}" | tee --append "${OUT}"
+                ./target/release/queen "${n}" | tee --append "${OUT}"
             done
             ;;
         BASH)
