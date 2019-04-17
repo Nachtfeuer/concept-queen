@@ -17,3 +17,4 @@ scripts/run_python35.sh
 scripts/run_ruby23.sh
 scripts/run_scala.sh
 scripts/run_clisp.sh
+scripts/run_rust.sh
